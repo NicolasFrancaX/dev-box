@@ -8,10 +8,6 @@
 " Init
 " ------------------------------------
 
-" $ sudo apt-get install vim-nox ncurses-term ack-grep
-" $ sudo ln -s /usr/bin/ack-grep /usr/bin/ack
-" $ echo 'export ACK_PAGER="/usr/bin/less -R"' >> ~/.bashrc
-
 " Pathogen
 
 call pathogen#infect()
@@ -111,6 +107,12 @@ inoremap <F9> <ESC>:NERDTreeToggle<cr>
 " Ack shortcut
 
 nnoremap <leader>a :Ack
+
+" Edit a write protected file after open
+
+nnoremap <leader>W :w !sudo tee %<cr>
+" Reference:
+" http://www.commandlinefu.com/commands/view/1204/save-a-file-you-edited-in-vim-without-the-needed-permissions
 
 " Spaces and Tabs
 " ------------------------------------
