@@ -8,7 +8,7 @@
 " Init
 " ------------------------------------
 
-" $ sudo apt-get install ncurses-term ack-grep
+" $ sudo apt-get install vim-nox ncurses-term ack-grep
 " $ sudo ln -s /usr/bin/ack-grep /usr/bin/ack
 " $ echo 'export ACK_PAGER="/usr/bin/less -R"' >> ~/.bashrc
 
