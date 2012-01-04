@@ -106,7 +106,7 @@ nnoremap <S-h> :tabprev<cr>
 
 nnoremap <F9>      :NERDTreeToggle<cr>
 vnoremap <F9>      :NERDTreeToggle<cr>
-inoremap <F9> <Esc>:NERDTreeToggle<cr>
+inoremap <F9> <ESC>:NERDTreeToggle<cr>
 
 " Ack shortcut
 
