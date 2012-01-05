@@ -9,5 +9,4 @@ install:
 	sudo gem install rake
 	cd ~/.vim/bundle/command-t
 	rake make
-	echo "Instalation complete!!! Now open vi and run `:call pathogen#helptags()` to create docs"
 
