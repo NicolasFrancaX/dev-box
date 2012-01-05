@@ -184,8 +184,7 @@ nnoremap <leader><space> :noh<cr>
 
 " Toggle paste mode
 
-nnoremap <F12> :set paste!<cr>
-inoremap <F12> <ESC>:set paste!<cr>i
+set pastetoggle=<F2>
 
 " GIT
 " ------------------------------------
