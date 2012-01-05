@@ -105,7 +105,7 @@ inoremap <F9> <ESC>:NERDTreeToggle<cr>
 
 " Ack shortcut
 
-nnoremap <leader>a :Ack
+nnoremap <leader>a :Ack -i 
 
 " Edit a write protected file after open
 
