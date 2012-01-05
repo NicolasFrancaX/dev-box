@@ -186,6 +186,12 @@ nnoremap <leader><space> :noh<cr>
 
 set pastetoggle=<F2>
 
+" Show buffer-explorer
+
+nnoremap <F3>      :BufExplorer<cr>
+vnoremap <F3> <ESC>:BufExplorer<cr>
+inoremap <F3> <ESC>:BufExplorer<cr>
+
 " GIT
 " ------------------------------------
 

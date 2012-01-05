@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/markdown"]
 	path = .vim/bundle/markdown
 	url = git://github.com/plasticboy/vim-markdown.git
+[submodule ".vim/bundle/buffer-explorer"]
+	path = .vim/bundle/buffer-explorer
+	url = git://github.com/widox/vim-buffer-explorer-plugin.git
