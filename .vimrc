@@ -1,7 +1,5 @@
 " TODO
 
-"cmd-t
-"git integration
 "last edited files
 "rails specific plugins
 
@@ -189,6 +187,18 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <F12> :set paste!<cr>
 inoremap <F12> <ESC>:set paste!<cr>i
 
+" GIT
+" ------------------------------------
+
+" auto-clean buffers
+
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
+" add branch name on status line
+
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
+
 " Reference:
 "
 " * http://stevelosh.com/blog/2010/09/coming-home-to-vim/
@@ -212,3 +222,4 @@ inoremap <F12> <ESC>:set paste!<cr>i
 " * http://vimcasts.org/
 " * http://www.stimuli.com.br/trane/2009/sep/19/how-i-learn-stop-worrying-and-love-vim/
 " * http://ayaz.wordpress.com/2008/06/21/paste-mode-pasting-text-and-indenting-it-in-vim/
+" * http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
