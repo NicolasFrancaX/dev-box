@@ -16,12 +16,14 @@
 [submodule ".vim/bundle/buffer-explorer"]
 	path = .vim/bundle/buffer-explorer
 	url = git://github.com/widox/vim-buffer-explorer-plugin.git
+	ignore = dirty
 [submodule ".vim/bundle/markdown"]
 	path = .vim/bundle/markdown
 	url = git://github.com/tpope/vim-markdown.git
 [submodule ".vim/bundle/snipmate"]
 	path = .vim/bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/sparkup"]
 	path = .vim/bundle/sparkup
 	url = git://github.com/kogakure/vim-sparkup.git

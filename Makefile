@@ -9,7 +9,7 @@ install:
 	ln -s $PWD/.gitmessage       ~/.gitmessage
 	
 	# Install some basic packages
-	sudo apt-get install ncurses-term vim-nox git ack-grep ruby rubygems gitk
+	sudo apt-get install g++ ncurses-term vim-nox git ack-grep ruby rubygems gitk
 	
 	# ack-grep is a lame name! Vi plugin won't recognize it
 	sudo ln -s /usr/bin/ack-grep /usr/bin/ack
@@ -17,12 +17,12 @@ install:
 	# ack pager is configured by default! Such a shame!
 	echo 'export ACK_PAGER="/usr/bin/less -R"' >> ~/.bashrc
 	
-	# install rake to compile command-t
-	sudo gem install rake
-	
 	# assert that submodules were correctly initialized
 	git submodule init
 	git submodule update
+	
+	# install rake to compile command-t
+	sudo gem install rake
 	
 	# compile command-t
 	cd ~/.vim/bundle/command-t
