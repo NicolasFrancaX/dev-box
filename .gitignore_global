@@ -1,0 +1,6 @@
+# Eclipse .project files
+.project
+
+#gedit and vi temporary files
+*~
+*.swp

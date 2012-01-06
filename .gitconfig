@@ -1,0 +1,15 @@
+[user]
+	name = Leandro Facchinetti
+	email = leafac@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vi
+[color]
+	ui = true
+[commit]
+	template = ~/.gitmessage
+[alias]
+	co = checkout
+	br = branch
+[merge]
+	tool = vimdiff
