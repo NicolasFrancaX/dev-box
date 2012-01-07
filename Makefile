@@ -15,7 +15,7 @@ install:
 	sudo ln -s /usr/bin/ack-grep /usr/bin/ack
 	
 	# ack pager is configured by default! Such a shame!
-	echo 'export ACK_PAGER="/usr/bin/less -R"' >> ~/.bashrc
+	echo 'source $(PWD)/.bashrc' >> ~/.bashrc
 	
 	# assert that submodules were correctly initialized
 	git submodule init
