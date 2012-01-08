@@ -9,7 +9,7 @@ install:
 	ln -s $PWD/.gitmessage       ~/.gitmessage
 	
 	# Install some basic packages
-	sudo apt-get install g++ ncurses-term vim-nox git ack-grep ruby rubygems gitk
+	sudo apt-get install g++ ncurses-term vim-nox git ack-grep ruby rubygems tig
 	
 	# ack-grep is a lame name! Vi plugin won't recognize it
 	sudo ln -s /usr/bin/ack-grep /usr/bin/ack
