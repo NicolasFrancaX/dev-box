@@ -13,7 +13,7 @@ install:
 	
 	
 	# Install some basic packages
-	sudo apt-get install g++ ncurses-term vim-nox git ack-grep tig
+	sudo apt-get install g++ ncurses-term vim-nox git ack-grep tig exuberant-ctags
 	
 	# ack-grep is a lame name! Vi plugin won't recognize it
 	sudo ln -s /usr/bin/ack-grep /usr/bin/ack
