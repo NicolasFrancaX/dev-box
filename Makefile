@@ -39,3 +39,6 @@ install:
 	rvm use --default 1.9.3-head
 	
 
+update:
+	git submodule init
+	git submodule update
