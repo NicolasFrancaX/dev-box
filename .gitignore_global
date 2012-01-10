@@ -1,6 +1,9 @@
 # Eclipse .project files
 .project
 
-#gedit and vi temporary files
+# gedit and vi temporary files
 *~
 *.swp
+
+# Ignore tags
+tags

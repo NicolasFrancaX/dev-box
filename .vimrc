@@ -88,7 +88,6 @@ nnoremap <C-l> <C-w>l
 
 " Tab navigation made easy
 
-nnoremap <C-t> :tabnew<cr>
 nnoremap <S-l> :tabnext<cr>
 nnoremap <S-h> :tabprev<cr>
 
