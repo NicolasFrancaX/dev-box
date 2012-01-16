@@ -6,6 +6,7 @@ ln -sf $PWD/.vimrc            ~/.vimrc
 ln -sf $PWD/.gitconfig        ~/.gitconfig
 ln -sf $PWD/.gitignore_global ~/.gitignore_global
 ln -sf $PWD/.gitmessage       ~/.gitmessage
+ln -sf $PWD/.irbrc            ~/.irbrc
 
 echo 'Incorporate my configs on .bashrc'
 echo "source $PWD/.bashrc" >> ~/.bashrc
