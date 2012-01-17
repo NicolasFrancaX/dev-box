@@ -11,3 +11,4 @@ PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]${debian_chroot:+($de
 export ACK_PAGER="/usr/bin/less -R"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion # RVM autocomplete
