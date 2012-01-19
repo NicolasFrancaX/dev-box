@@ -158,6 +158,14 @@ nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
 set ts=2 sts=2 sw=2 expandtab     " Default spaces
 
+" Spaces for filetypes
+
+autocmd FileType html      setlocal sts=4 sts=4 sw=4 expandtab
+autocmd FileType php       setlocal sts=4 sts=4 sw=4 expandtab
+autocmd FileType makefile  setlocal sts=4 sts=4 sw=4 noexpandtab
+autocmd FileType markdown  setlocal sts=4 sts=4 sw=4 expandtab
+
+
 " Search
 " ------------------------------------
 
