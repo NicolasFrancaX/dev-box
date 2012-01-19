@@ -49,6 +49,7 @@ set undofile                      " Undo available even after buffer close
 set list                          " Show invisible chars
 set listchars=tab:»\ ,trail:·
 set colorcolumn=80                " Show ruler on column 80
+set clipboard=unnamed             " Integrate clipboard from system with Vim
 
 " Key remappings
 " ------------------------------------
