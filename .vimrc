@@ -49,7 +49,6 @@ set undofile                      " Undo available even after buffer close
 set list                          " Show invisible chars
 set listchars=tab:»\ ,trail:·
 set colorcolumn=80                " Show ruler on column 80
-set clipboard=unnamed             " Integrate clipboard from system with Vim
 
 " Key remappings
 " ------------------------------------
@@ -185,16 +184,6 @@ set hlsearch          " Highlight search
 
 nnoremap <leader><space> :noh<cr>
 
-" Toggle paste mode
-
-set pastetoggle=<F2>
-
-" Show buffer-explorer
-
-nnoremap <F3>      :BufExplorer<cr>
-vnoremap <F3> <ESC>:BufExplorer<cr>
-inoremap <F3> <ESC>:BufExplorer<cr>
-
 " GIT
 " ------------------------------------
 
@@ -209,6 +198,24 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " Taglist
 " ------------------------------------
 
-let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+let Tlist_Ctags_Cmd = "/usr/bin/ctags-exuberant"
 let Tlist_WinWidth = 50
 map <F4> :TlistToggle<cr>
+
+" Copy and paste to system clipboard
+" ------------------------------------
+
+" Toggle copy mode
+
+map <F6> <ESC>:only<cr>:set number!<cr>:set list!<cr>
+
+" Toggle paste mode
+
+set pastetoggle=<F2>
+
+" Buffer-explorer
+" ------------------------------------
+
+nnoremap <F3>      :BufExplorer<cr>
+vnoremap <F3> <ESC>:BufExplorer<cr>
+inoremap <F3> <ESC>:BufExplorer<cr>

@@ -1,14 +1,11 @@
 dotfiles
 ========
 
-Keeping verioned dotfiles so that I can mantain consistent development environments. Also, I'm able to whatch the evolution as my `.vimrc` grows hairy and messy :P
+Keeping versioned dotfiles so that I can mantain consistent development environments. Also, I'm able to whatch the evolution as my `.vimrc` grows hairy and messy :P
 
-TODO
-----
+It's tailored for Ubuntu 11.10. But should work with minor changes on other environments.
 
-- Improve README
-- Learn CTAGS
-- Ctrl + n
+In theory you could run `install.sh` and have everything working, I heard one person has done it and succeeded. But I offer no guarantees :P
 
 Reference
 ---------
