@@ -7,13 +7,14 @@ ln -sf $PWD/.gitconfig        ~/.gitconfig
 ln -sf $PWD/.gitignore_global ~/.gitignore_global
 ln -sf $PWD/.gitmessage       ~/.gitmessage
 ln -sf $PWD/.irbrc            ~/.irbrc
+ln -sf $PWD/.tmux.conf        ~/.tmux.conf
 
 echo 'Incorporate my configs on .bashrc'
 echo "source $PWD/.bashrc" >> ~/.bashrc
 
 
 echo 'Install some basic packages'
-sudo apt-get install g++ ncurses-term vim-nox git ack-grep tig exuberant-ctags
+sudo apt-get install g++ ncurses-term vim-nox git ack-grep tig exuberant-ctags tmux
 
 echo "ack-grep is a lame name! Vi plugin won't recognize it"
 sudo ln -sf /usr/bin/ack-grep /usr/bin/ack

@@ -7,6 +7,12 @@ It's tailored for Ubuntu 11.10. But should work with minor changes on other envi
 
 In theory you could run `install.sh` and have everything working, I heard one person has done it and succeeded. But I offer no guarantees :P
 
+TODO
+----
+
+Watch screen cast about aligning text.
+Integrate tmux with vim.
+
 Reference
 ---------
 
@@ -34,3 +40,5 @@ Reference
 * http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
 * http://amix.dk/blog/post/19329
 * http://www.thegeekstuff.com/2009/04/ctags-taglist-vi-vim-editor-as-sourece-code-browser/
+* http://rhnh.net/2011/08/20/vim-and-tmux-on-osx
+* http://alexyoung.org/2011/12/19/build-an-ide-with-tmux-and-vim/

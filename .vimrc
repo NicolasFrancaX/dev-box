@@ -16,7 +16,7 @@ set modelines=0
 " Theme
 " ------------------------------------
 
-set term=gnome-256color         " Enable true colors on terminal
+set term=screen-256color         " Enable true colors on terminal
                                 " Requires ncurses-term package
 colorscheme mustang             " Theme mustang
 " Highlight color column smoothly instead of using a shocking red :P
