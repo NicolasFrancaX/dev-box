@@ -46,6 +46,3 @@
 	path = .vim/bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
 	ignore = dirty
-[submodule ".vim/bundle/tslime"]
-	path = .vim/bundle/tslime
-	url = git://github.com/kikijump/tslime.vim.git
