@@ -14,7 +14,7 @@ echo "source $PWD/.bashrc" >> ~/.bashrc
 
 
 echo 'Install some basic packages'
-sudo apt-get install g++ ncurses-term vim-nox vim-gui-commom git ack-grep tig exuberant-ctags tmux
+sudo apt-get install g++ ncurses-term vim-nox vim-gui-common git ack-grep tig exuberant-ctags tmux
 
 echo "ack-grep is a lame name! Vi plugin won't recognize it"
 sudo ln -sf /usr/bin/ack-grep /usr/bin/ack
