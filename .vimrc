@@ -205,6 +205,8 @@ map <F4> :TlistToggle<cr>
 " Copy and paste to system clipboard
 " ------------------------------------
 
+set clipboard=unnamedplus
+
 " Toggle copy mode
 
 map <F6> <ESC>:only<cr>:set number!<cr>:set list!<cr>
