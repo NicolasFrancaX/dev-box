@@ -207,10 +207,6 @@ map <F4> :TlistToggle<cr>
 
 set clipboard=unnamedplus
 
-" Toggle copy mode
-
-map <F6> <ESC>:only<cr>:set number!<cr>:set list!<cr>
-
 " Toggle paste mode
 
 set pastetoggle=<F2>
