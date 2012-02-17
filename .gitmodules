@@ -46,3 +46,6 @@
 	path = .vim/bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
 	ignore = dirty
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git://github.com/leafac/oh-my-zsh.git

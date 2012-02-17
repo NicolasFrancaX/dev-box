@@ -8,13 +8,14 @@ ln -sf $PWD/.gitignore_global ~/.gitignore_global
 ln -sf $PWD/.gitmessage       ~/.gitmessage
 ln -sf $PWD/.irbrc            ~/.irbrc
 ln -sf $PWD/.tmux.conf        ~/.tmux.conf
+ln -sf $PWD/oh-my-zsh         ~/.oh-my-zsh
 
 echo 'Incorporate my configs on .bashrc'
 echo "source $PWD/.bashrc" >> ~/.bashrc
 
 
 echo 'Install some basic packages'
-sudo apt-get install g++ ncurses-term vim-nox vim-gui-common git ack-grep tig exuberant-ctags tmux
+sudo apt-get install g++ ncurses-term vim-nox vim-gui-common git ack-grep tig exuberant-ctags tmux zsh
 
 echo "ack-grep is a lame name! Vi plugin won't recognize it"
 sudo ln -sf /usr/bin/ack-grep /usr/bin/ack
@@ -39,3 +40,6 @@ cd ~/.vim/bundle/command-t
 rake make
 rvm use --default 1.9.3-head
 
+echo 'Configure oh-my-zsh'
+ln -sf ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+chsh -s /bin/zsh
