@@ -1,18 +1,14 @@
 #!/bin/bash
 
 echo 'Linking dotfiles on home folder'
-ln -sf $PWD/.vim              ~/.vim
-ln -sf $PWD/.vimrc            ~/.vimrc
-ln -sf $PWD/.gitconfig        ~/.gitconfig
-ln -sf $PWD/.gitignore_global ~/.gitignore_global
-ln -sf $PWD/.gitmessage       ~/.gitmessage
-ln -sf $PWD/.irbrc            ~/.irbrc
-ln -sf $PWD/.tmux.conf        ~/.tmux.conf
-ln -sf $PWD/oh-my-zsh         ~/.oh-my-zsh
-
-echo 'Incorporate my configs on .bashrc'
-echo "source $PWD/.bashrc" >> ~/.bashrc
-
+ln -sf $PWD/vim                  ~/.vim
+ln -sf $PWD/vim/vimrc            ~/.vimrc
+ln -sf $PWD/git/gitconfig        ~/.gitconfig
+ln -sf $PWD/git/gitignore_global ~/.gitignore_global
+ln -sf $PWD/git/gitmessage       ~/.gitmessage
+ln -sf $PWD/irbrc                ~/.irbrc
+ln -sf $PWD/tmux.conf            ~/.tmux.conf
+ln -sf $PWD/oh-my-zsh            ~/.oh-my-zsh
 
 echo 'Install some basic packages'
 sudo apt-get install g++ ncurses-term vim-nox vim-gui-common git ack-grep tig exuberant-ctags tmux zsh
@@ -41,5 +37,5 @@ rake make
 rvm use --default 1.9.3-head
 
 echo 'Configure oh-my-zsh'
-ln -sf ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+ln -sf ~/.oh-my-zsh/zshrc ~/.zshrc
 chsh -s /bin/zsh
