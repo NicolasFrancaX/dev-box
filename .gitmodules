@@ -1,49 +1,49 @@
-[submodule ".vim/bundle/command-t"]
-	path = .vim/bundle/command-t
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
 	url = git://github.com/wincent/Command-T.git
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule ".vim/bundle/nerdcommenter"]
-	path = .vim/bundle/nerdcommenter
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule ".vim/bundle/ack"]
-	path = .vim/bundle/ack
+[submodule "vim/bundle/ack"]
+	path = vim/bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
-[submodule ".vim/bundle/fugitive"]
-	path = .vim/bundle/fugitive
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule ".vim/bundle/buffer-explorer"]
-	path = .vim/bundle/buffer-explorer
+[submodule "vim/bundle/buffer-explorer"]
+	path = vim/bundle/buffer-explorer
 	url = git://github.com/widox/vim-buffer-explorer-plugin.git
 	ignore = dirty
-[submodule ".vim/bundle/markdown"]
-	path = .vim/bundle/markdown
+[submodule "vim/bundle/markdown"]
+	path = vim/bundle/markdown
 	url = git://github.com/tpope/vim-markdown.git
-[submodule ".vim/bundle/snipmate"]
-	path = .vim/bundle/snipmate
+[submodule "vim/bundle/snipmate"]
+	path = vim/bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
 	ignore = dirty
-[submodule ".vim/bundle/sparkup"]
-	path = .vim/bundle/sparkup
+[submodule "vim/bundle/sparkup"]
+	path = vim/bundle/sparkup
 	url = git://github.com/kogakure/vim-sparkup.git
-[submodule ".vim/bundle/surround"]
-	path = .vim/bundle/surround
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule ".vim/bundle/rails"]
-	path = .vim/bundle/rails
+[submodule "vim/bundle/rails"]
+	path = vim/bundle/rails
 	url = git://github.com/tpope/vim-rails.git
-[submodule ".vim/bundle/bundle"]
-	path = .vim/bundle/bundle
+[submodule "vim/bundle/bundle"]
+	path = vim/bundle/bundle
 	url = git://github.com/tpope/vim-bundler.git
-[submodule ".vim/bundle/rake"]
-	path = .vim/bundle/rake
+[submodule "vim/bundle/rake"]
+	path = vim/bundle/rake
 	url = git://github.com/tpope/vim-rake.git
-[submodule ".vim/bundle/gitv"]
-	path = .vim/bundle/gitv
+[submodule "vim/bundle/gitv"]
+	path = vim/bundle/gitv
 	url = git://github.com/gregsexton/gitv.git
-[submodule ".vim/bundle/taglist"]
-	path = .vim/bundle/taglist
+[submodule "vim/bundle/taglist"]
+	path = vim/bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
 	ignore = dirty
 [submodule "oh-my-zsh"]
