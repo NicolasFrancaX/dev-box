@@ -20,21 +20,21 @@ echo 'Install rvm'
 bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
 source ~/.bashrc
 sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
-rvm install 1.8.7-head
-rvm install 1.9.3-head
+rvm install 1.8.7
+rvm install 1.9.3
 
 echo 'Assert that submodules were correctly initialized'
 git submodule init
 git submodule update
 
 echo 'Install rake to compile command-t'
-rvm use 1.8.7-head
+rvm use 1.8.7
 gem install rake
 
 echo 'Compile command-t'
 cd ~/.vim/bundle/command-t
 rake make
-rvm use --default 1.9.3-head
+rvm use --default 1.9.3
 
 echo 'Configure oh-my-zsh'
 ln -sf ~/.oh-my-zsh/zshrc ~/.zshrc
