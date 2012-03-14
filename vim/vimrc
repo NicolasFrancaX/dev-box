@@ -217,3 +217,11 @@ set pastetoggle=<F2>
 nnoremap <F3>      :BufExplorer<cr>
 vnoremap <F3> <ESC>:BufExplorer<cr>
 inoremap <F3> <ESC>:BufExplorer<cr>
+
+" Tabular
+" ------------------------------------
+
+nnoremap <leader>== :Tabularize/=<cr>
+vnoremap <leader>== :Tabularize/=<cr>
+nnoremap <leader>=: :Tabularize/:<cr>
+vnoremap <leader>=: :Tabularize/:<cr>
