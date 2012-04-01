@@ -55,3 +55,6 @@
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/smartinput"]
+	path = vim/bundle/smartinput
+	url = git://github.com/kana/vim-smartinput.git
