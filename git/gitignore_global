@@ -4,6 +4,7 @@
 # gedit and vi temporary files
 *~
 *.swp
+*.swo
 
 # Ignore tags
 tags
