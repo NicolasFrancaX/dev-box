@@ -104,6 +104,7 @@ nnoremap <leader>a :Ack -i
 " Edit a write protected file after open
 
 nnoremap <leader>W :w !sudo tee %<cr>
+
 " Reference:
 " http://www.commandlinefu.com/commands/view/1204/save-a-file-you-edited-in-vim-without-the-needed-permissions
 
@@ -190,10 +191,6 @@ nnoremap <leader><space> :noh<cr>
 " auto-clean buffers
 
 autocmd BufReadPost fugitive://* set bufhidden=delete
-
-" add branch name on status line
-
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Taglist
 " ------------------------------------
