@@ -224,3 +224,11 @@ nnoremap <leader>== :Tabularize/=<cr>
 vnoremap <leader>== :Tabularize/=<cr>
 nnoremap <leader>=: :Tabularize/:<cr>
 vnoremap <leader>=: :Tabularize/:<cr>
+
+
+" PowerLine
+" ------------------------------------
+
+" make it prettier
+
+let g:Powerline_symbols = 'fancy'
