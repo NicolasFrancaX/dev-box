@@ -93,9 +93,9 @@ nnoremap <S-h> :tabprev<cr>
 
 " NERDTree shortcut
 
-nnoremap <F9>      :NERDTreeToggle<cr>
-vnoremap <F9>      :NERDTreeToggle<cr>
-inoremap <F9> <ESC>:NERDTreeToggle<cr>
+nnoremap <F9>      :NERDTreeToggle<cr><cr>
+vnoremap <F9>      :NERDTreeToggle<cr><cr>
+inoremap <F9> <ESC>:NERDTreeToggle<cr><cr>
 
 " Ack shortcut
 
@@ -164,6 +164,8 @@ autocmd FileType html      setlocal sts=4 sts=4 sw=4 expandtab
 autocmd FileType php       setlocal sts=4 sts=4 sw=4 expandtab
 autocmd FileType makefile  setlocal sts=4 sts=4 sw=4 noexpandtab
 autocmd FileType markdown  setlocal sts=4 sts=4 sw=4 expandtab
+autocmd FileType java      setlocal sts=4 sts=4 sw=4 expandtab
+autocmd FileType python    setlocal sts=4 sts=4 sw=4 expandtab
 
 
 " Search
