@@ -58,9 +58,6 @@
 [submodule "vim/bundle/powerline"]
 	path = vim/bundle/powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule "fonts/ubuntu-mono-powerline"]
-	path = fonts/ubuntu-mono-powerline
-	url = git://github.com/scotu/ubuntu-mono-powerline.git
 [submodule "vim/bundle/vimux"]
 	path = vim/bundle/vimux
 	url = git://github.com/benmills/vimux.git
