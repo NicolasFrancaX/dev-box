@@ -5,7 +5,7 @@
 
 call pathogen#infect()
 call pathogen#helptags()
-syntax on
+syntax enable
 filetype plugin indent on
 
 " Compatibility off, no one cares about bare Vi
@@ -16,11 +16,7 @@ set modelines=0
 " Theme
 " ------------------------------------
 
-set term=screen-256color         " Enable true colors on terminal
-                                " Requires ncurses-term package
-colorscheme mustang             " Theme mustang
-" Highlight color column smoothly instead of using a shocking red :P
-hi colorcolumn ctermbg=235 guibg=#262626
+colorscheme solarized
 
 " Screen
 " ------------------------------------
@@ -30,10 +26,6 @@ set encoding=utf-8
 set scrolloff=3                   " scroll should happen before cursor
                                   " reaches end of the screen
 set autoindent
-set showmode                      " Show -- INSERT -- or -- VISUAL --
-                                  " on the bottom of the screen.
-                                  " This is Vim default, but isn't
-                                  " Vi default, so there it is :D
 set showcmd                       " Show partial commands while
                                   " being typed
 set hidden                        " Buffers should be hidden when
@@ -231,7 +223,8 @@ vnoremap <leader>=: :Tabularize/:<cr>
 
 " make it prettier
 
-let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols     = 'fancy'
+let g:Powerline_colorscheme = 'solarized_light'
 
 " Vimux
 " ------------------------------------
