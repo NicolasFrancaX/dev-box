@@ -57,7 +57,7 @@
 	url = git://github.com/kana/vim-smartinput.git
 [submodule "vim/bundle/powerline"]
 	path = vim/bundle/powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
+	url = git://github.com/leafac/vim-powerline.git
 [submodule "vim/bundle/vimux"]
 	path = vim/bundle/vimux
 	url = git://github.com/benmills/vimux.git

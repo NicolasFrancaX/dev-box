@@ -224,7 +224,7 @@ vnoremap <leader>=: :Tabularize/:<cr>
 " make it prettier
 
 let g:Powerline_symbols     = 'fancy'
-let g:Powerline_colorscheme = 'solarized_light'
+let g:Powerline_colorscheme = 'solarizedLightLC'
 
 " Vimux
 " ------------------------------------
