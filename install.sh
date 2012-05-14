@@ -5,17 +5,16 @@ git submodule init
 git submodule update
 
 echo 'Linking dotfiles on home folder'
-ln -sf $PWD/vim                         ~/.vim
-ln -sf $PWD/vim/vimrc                   ~/.vimrc
-ln -sf $PWD/git/gitconfig               ~/.gitconfig
-ln -sf $PWD/git/gitignore_global        ~/.gitignore_global
-ln -sf $PWD/git/gitmessage              ~/.gitmessage
-ln -sf $PWD/irbrc                       ~/.irbrc
-ln -sf $PWD/tmux.conf                   ~/.tmux.conf
-ln -sf $PWD/oh-my-zsh                   ~/.oh-my-zsh
-ln -sf ~/.oh-my-zsh/zshrc               ~/.zshrc
-mkdir -p ~/.fonts
-ln -sf $PWD/fonts/ubuntu-mono-powerline ~/.fonts/ubuntu-mono-powerline
+ln -sf $PWD/vim                  ~/.vim
+ln -sf $PWD/vim/vimrc            ~/.vimrc
+ln -sf $PWD/git/gitconfig        ~/.gitconfig
+ln -sf $PWD/git/gitignore_global ~/.gitignore_global
+ln -sf $PWD/git/gitmessage       ~/.gitmessage
+ln -sf $PWD/irbrc                ~/.irbrc
+ln -sf $PWD/tmux.conf            ~/.tmux.conf
+ln -sf $PWD/oh-my-zsh            ~/.oh-my-zsh
+ln -sf ~/.oh-my-zsh/zshrc        ~/.zshrc
+ln -sf $PWD/fonts                ~/.fonts
 
 echo 'Install some basic packages'
 sudo apt-get install g++ ncurses-term vim-nox vim-gui-common git ack-grep tig exuberant-ctags tmux zsh build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion ruby1.9.1
