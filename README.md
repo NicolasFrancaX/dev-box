@@ -3,15 +3,9 @@ dotfiles
 
 Keeping versioned dotfiles so that I can mantain consistent development environments. Also, I'm able to whatch the evolution as my `.vimrc` grows hairy and messy :P
 
-It's tailored for Ubuntu 11.10. But should work with minor changes on other environments.
+It's tailored for Ubuntu 12.10. But should work with minor changes on other environments.
 
 In theory you could run `install.sh` and have everything working, I heard one person has done it and succeeded. But I offer no guarantees :P
-
-TODO
-----
-
-Watch screen cast about aligning text.
-Integrate tmux with vim.
 
 Reference
 ---------
