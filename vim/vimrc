@@ -68,6 +68,8 @@ inoremap <right>  <NOP>
 
 nnoremap j gj
 nnoremap k gk
+nnoremap $ g$
+nnoremap 0 g0
 
 " Window navigation made easy
 
