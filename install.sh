@@ -44,6 +44,13 @@ echo 'Install gems'
 
 gem install bundler wirble pry
 
+echo 'Install node.js'
+
+sudo apt-get install python-software-properties
+sudo apt-add-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs npm nodejs-dev
+
 echo 'Change default shell to zsh'
 
 chsh -s /bin/zsh
