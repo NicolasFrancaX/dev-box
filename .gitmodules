@@ -65,12 +65,12 @@
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
-[submodule "solarized"]
-	path = solarized
-	url = git://github.com/sigurdga/gnome-terminal-colors-solarized.git
 [submodule "vim/bundle/solarized"]
 	path = vim/bundle/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/mustache"]
 	path = vim/bundle/mustache
 	url = git://github.com/juvenn/mustache.vim.git
+[submodule "solarized"]
+	path = solarized
+	url = git://github.com/sgerrand/xfce4-terminal-colors-solarized.git
