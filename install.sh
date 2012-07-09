@@ -33,23 +33,9 @@ echo "ack-grep is a lame name! Vim plugin won't recognize it"
 
 sudo ln -sf /usr/bin/ack-grep /usr/bin/ack
 
-echo 'Install rvm'
-
-bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
-rvm install 1.9.3-head
-rvm use --default 1.9.3-head
-
 echo 'Install gems'
 
 gem install bundler wirble pry
-
-echo 'Install node.js'
-
-sudo apt-get install python-software-properties
-sudo apt-add-repository ppa:chris-lea/node.js
-sudo apt-get update
-sudo apt-get install nodejs npm nodejs-dev
 
 echo 'Change default shell to zsh'
 
