@@ -26,12 +26,7 @@ ln -sf $PWD/fonts                ~/.fonts
 
 echo 'Install some basic packages'
 
-sudo apt-get install g++ ncurses-term vim-nox vim-gui-common git ack-grep tig exuberant-ctags tmux zsh build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion ruby1.9.1
-
-
-echo "ack-grep is a lame name! Vim plugin won't recognize it"
-
-sudo ln -sf /usr/bin/ack-grep /usr/bin/ack
+sudo yum install zsh vim-X11 git tig ruby tmux ack gcc
 
 echo 'Install gems'
 
