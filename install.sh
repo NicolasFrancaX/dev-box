@@ -6,9 +6,9 @@ git submodule init
 git submodule update
 
 echo 'Lets change the theme!'
-echo 'You may want to create a different terminal profile before proceeding!'
 
-solarized/install.sh
+mkdir -p ~/.config/Terminal
+cp -f solarized/light/terminalrc ~/.config/Terminal/terminalrc
 
 echo 'Linking dotfiles on home folder'
 
