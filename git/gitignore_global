@@ -1,5 +1,8 @@
-# Eclipse .project files
+# Eclipse files
 .project
+.classpath
+.settings/
+target/
 
 # gedit and vi temporary files
 *~
