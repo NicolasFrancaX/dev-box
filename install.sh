@@ -8,7 +8,7 @@ git submodule update
 echo 'Linking dotfiles on home folder'
 
 ln -sf $PWD/vim                        ~/.vim
-ln -sf $PWD/vim/vimrc                  ~/.vimrc
+ln -sf ~/.vim/vimrc                    ~/.vimrc
 ln -sf $PWD/git/gitconfig              ~/.gitconfig
 ln -sf $PWD/git/gitignore_global       ~/.gitignore_global
 ln -sf $PWD/git/gitmessage             ~/.gitmessage
@@ -23,7 +23,6 @@ ln -sf $PWD/solarized/light/terminalrc ~/.config/Terminal/terminalrc
 
 echo 'Install some basic packages'
 
-sudo yum install zsh vim-X11 git tig ruby tmux ack gcc ctags
 
 echo 'Install gems'
 
