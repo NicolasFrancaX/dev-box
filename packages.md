@@ -34,6 +34,7 @@ chromium
 flashplugin
 dropbox (AUR)
 thunar-dropbox (AUR)
+dropbox-daemon (AUR)
 
 xcursor-neutral
 elementary-xfce-icons (AUR)
