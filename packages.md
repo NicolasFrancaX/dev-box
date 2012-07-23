@@ -38,6 +38,9 @@ dropbox-daemon (AUR)
 
 xcursor-neutral
 elementary-xfce-icons (AUR)
+slim-themes
+archlinux-themes-slim
+archlinux-wallpaper
 
 openssh
 tmux
