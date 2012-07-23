@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo 'Refer to packages.md to confirm that every package'
+echo 'is installed before proceeding!'
+
+read
+
 echo 'Assert that submodules were correctly initialized'
 
 git submodule init
@@ -20,9 +25,6 @@ ln -sf ~/.oh-my-zsh/zshrc              ~/.zshrc
 ln -sf $PWD/fonts                      ~/.fonts
 mkdir -p ~/.config/Terminal
 ln -sf $PWD/solarized/light/terminalrc ~/.config/Terminal/terminalrc
-
-echo 'Install some basic packages'
-
 
 echo 'Install gems'
 
