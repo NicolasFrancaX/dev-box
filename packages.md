@@ -1,5 +1,8 @@
 sudo
 
+package-query (AUR)
+yaourt (AUR)
+
 xorg-server
 xorg-xinit
 xorg-server-utils
@@ -29,6 +32,8 @@ parole
 gstreamer0.10-plugins
 chromium
 flashplugin
+dropbox (AUR)
+thunar-dropbox (AUR)
 
 xcursor-neutral
 elementary-xfce-icons (AUR)
