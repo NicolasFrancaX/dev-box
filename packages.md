@@ -53,3 +53,4 @@ ack
 ctags
 nodejs
 postgresql
+pgadmin3
