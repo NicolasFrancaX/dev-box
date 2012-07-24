@@ -51,3 +51,5 @@ gvim
 tig
 ack
 ctags
+nodejs
+postgresql
