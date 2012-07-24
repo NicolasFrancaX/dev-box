@@ -3,7 +3,7 @@
 	email = leafac@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = vi
+	editor = vim
 [color]
 	ui = true
 [commit]
