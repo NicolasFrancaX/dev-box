@@ -24,6 +24,9 @@ xfce4-goodies
 slim
 
 squeeze-git (AUR)
+unzip
+unrar
+ntfs-3g
 networkmanager
 network-manager-applet
 pmount
