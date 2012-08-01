@@ -57,3 +57,5 @@ ctags
 nodejs
 postgresql
 pgadmin3
+eclipse
+python
