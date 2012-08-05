@@ -14,6 +14,8 @@ dbus
 nvidia
 nvidia-utils
 
+alsa-utils
+
 ttf-dejavu
 ttf-droid
 ttf-ms-fonts (AUR)
