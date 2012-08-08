@@ -61,3 +61,4 @@ postgresql
 pgadmin3
 eclipse
 python
+tree
