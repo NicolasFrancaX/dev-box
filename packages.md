@@ -1,64 +1,81 @@
-sudo
+Packages
+========
 
-package-query (AUR)
-yaourt (AUR)
+AUR packages are _highlighted_.
 
-xorg-server
-xorg-xinit
-xorg-server-utils
+* sudo
 
-mesa
-xf86-video-vesa
-dbus
+* _package-query_
+* _yaourt_
 
-nvidia
-nvidia-utils
+* xorg-server
+* xorg-xinit
+* xorg-server-utils
 
-alsa-utils
+* mesa
+* xf86-video-vesa
+* dbus
 
-ttf-dejavu
-ttf-droid
-ttf-ms-fonts (AUR)
+* nvidia
+* nvidia-utils
 
-xfce4
-xfce4-goodies
+* alsa-utils
 
-slim
+* ttf-dejavu
+* ttf-droid
+* _ttf-ms-fonts_
 
-squeeze-git (AUR)
-unzip
-unrar
-ntfs-3g
-networkmanager
-network-manager-applet
-pmount
-epdfview
-parole
-gstreamer0.10-plugins
-chromium
-flashplugin
-dropbox (AUR)
-thunar-dropbox (AUR)
-dropbox-daemon (AUR)
+* xfce4
+* xfce4-goodies
 
-xcursor-neutral
-elementary-xfce-icons (AUR)
-slim-themes
-archlinux-themes-slim
-archlinux-wallpaper
+* slim
 
-openssh
-tmux
-git
-ruby
-zsh
-gvim
-tig
-ack
-ctags
-nodejs
-postgresql
-pgadmin3
-eclipse
-python
-tree
+* _squeeze-git_
+* unzip
+* unrar
+* ntfs-3g
+* networkmanager
+* network-manager-applet
+* pmount
+* epdfview
+* parole
+* gstreamer0.10-plugins
+* chromium
+* flashplugin
+* _dropbox_
+* _thunar-dropbox_
+* _dropbox-daemon_
+
+* xcursor-neutral
+* _elementary-xfce-icons_
+* slim-themes
+* archlinux-themes-slim
+* archlinux-wallpaper
+
+* openssh
+* tmux
+* git
+* ruby
+* zsh
+* gvim
+* tig
+* ack
+* ctags
+* nodejs
+* postgresql
+* pgadmin3
+* eclipse
+* python
+* tree
+
+Gems
+====
+
+* bundler
+* wirble
+* pry
+
+Pip
+===
+
+* httpie

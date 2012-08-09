@@ -26,10 +26,6 @@ ln -sf $PWD/fonts                      ~/.fonts
 mkdir -p ~/.config/Terminal
 ln -sf $PWD/solarized/light/terminalrc ~/.config/Terminal/terminalrc
 
-echo 'Install gems'
-
-gem install bundler wirble pry
-
 echo 'Change default shell to zsh'
 
 chsh -s /bin/zsh
