@@ -66,6 +66,7 @@ AUR packages are _highlighted_.
 * pgadmin3
 * eclipse
 * tree
+* gimp
 
 Gems
 ====
@@ -76,5 +77,3 @@ Gems
 
 Pip
 ===
-
-* httpie
