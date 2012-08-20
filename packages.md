@@ -67,6 +67,7 @@ AUR packages are _highlighted_.
 * eclipse
 * tree
 * gimp
+* dnsutils
 
 Gems
 ====
