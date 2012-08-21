@@ -68,6 +68,7 @@ AUR packages are _highlighted_.
 * tree
 * gimp
 * dnsutils
+* calibre
 
 Gems
 ====
