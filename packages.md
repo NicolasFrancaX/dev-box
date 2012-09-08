@@ -70,6 +70,7 @@ AUR packages are _highlighted_.
 * dnsutils
 * calibre
 * _herrie_
+* _shutter_
 
 Gems
 ====
