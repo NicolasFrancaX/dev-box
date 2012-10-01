@@ -57,11 +57,12 @@ thunar-dropbox              \
 dropbox-daemon              \
 elementary-xfce-icons       \
 herrie                      \
-shutter
+shutter                     \
+gnu-netcat
 
 
 
-# gem install                 \
-# bundler                     \
-# wirble                      \
-# pry
+gem install                 \
+bundler                     \
+wirble                      \
+pry
