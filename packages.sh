@@ -51,7 +51,6 @@ gimp                        \
 dnsutils                    \
 calibre                     \
 ttf-ms-fonts                \
-package-query               \
 squeeze-git                 \
 dropbox                     \
 thunar-dropbox              \
