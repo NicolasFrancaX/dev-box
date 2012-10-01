@@ -35,6 +35,9 @@ archlinux-themes-slim       \
 archlinux-wallpaper         \
 openssh                     \
 tmux                        \
+irssi                       \
+bitlbee                     \
+gnu-netcat                  \
 git                         \
 ruby                        \
 zsh                         \
@@ -57,8 +60,7 @@ thunar-dropbox              \
 dropbox-daemon              \
 elementary-xfce-icons       \
 herrie                      \
-shutter                     \
-gnu-netcat
+shutter
 
 
 
