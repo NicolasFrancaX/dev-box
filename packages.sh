@@ -35,6 +35,7 @@ archlinux-themes-slim       \
 archlinux-wallpaper         \
 openssh                     \
 tmux                        \
+htop                        \
 irssi                       \
 bitlbee                     \
 gnu-netcat                  \
