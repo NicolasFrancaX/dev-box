@@ -11,5 +11,5 @@ Install
 [Puppet](http://puppetlabs.com/) is used to provision my development machine.
 
 ```bash
-# puppet apply dev-machine.pp
+# puppet apply install.pp
 ```
