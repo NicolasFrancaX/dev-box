@@ -2,13 +2,30 @@
 
 nnoremap / /\v
 vnoremap / /\v
-set ignorecase        " Case insensitive by default
-set smartcase         " If there's one upcase letter, case sensitive
-                      " search is desired
-set gdefault          " Global replace by default
-set incsearch         " Search while typing
-set showmatch         " Quickly point to the matching bracket when closing
-set hlsearch          " Highlight search
+
+" Case insensitive by default
+
+set ignorecase
+
+" If there's one upcase letter, case sensitive search is desired
+
+set smartcase
+
+" Global replace by default
+
+set gdefault
+
+" Search while typing
+
+set incsearch
+
+" Quickly point to the matching bracket when closing
+
+set showmatch
+
+" Highlight search
+
+set hlsearch
 
 " Clear highlight shortcut
 

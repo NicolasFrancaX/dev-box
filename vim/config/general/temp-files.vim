@@ -1,9 +1,18 @@
-set backup                        " Backup is always nice
-set undofile                      " Undo available even after buffer close
+" Backup is always nice
 
-set undolevels=1000               " Maximum number of changes that can be undone
-set undoreload=10000              " Maximum number lines to save for undo on
-                                  " a buffer reload
+set backup
+
+" Undo available even after buffer close
+
+set undofile
+
+" Maximum number of changes that can be undone
+
+set undolevels=1000
+
+" Maximum number lines to save for undo on a buffer reload
+
+set undoreload=10000
 
 " folders to store temp files and avoid cluttering the current directory
 
