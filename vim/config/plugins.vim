@@ -1,14 +1,3 @@
-" Init
-" ------------------------------------
-
-" Configure vundle
-
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-fugitive'
@@ -32,5 +21,3 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'juvenn/mustache'
 Bundle 'vim-scripts/ShowMarks'
 Bundle 'leafac/vim-puppet'
-
-filetype plugin indent on
