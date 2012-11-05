@@ -1,0 +1,3 @@
+exec {'vim +BundleInstall +qa':
+
+}
