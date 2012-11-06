@@ -1,8 +1,19 @@
-exec {'vim +BundleInstall +qa':
+class install {
 
+  include vim
+
+  Exec {
+    path => [
+      '/usr/local/bin',
+      '/usr/bin',
+      '/bin',
+      '/usr/local/sbin',
+      '/usr/sbin',
+      '/sbin',
+    ],
+    logoutput => true,
+  }
 }
-
-
 
 # #!/bin/bash
 # 
