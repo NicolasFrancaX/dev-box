@@ -8,8 +8,8 @@ It's tailored for [Arch Linux](http://www.archlinux.org/). But should work with 
 Install
 -------
 
-[Puppet](http://puppetlabs.com/) is used to provision my development machine.
+[Puppet](http://puppetlabs.com/) is used to provision my development machine. Have it installed and on `PATH`.
 
 ```bash
-# puppet apply install.pp --modulepath .
+$ ./install.sh
 ```
