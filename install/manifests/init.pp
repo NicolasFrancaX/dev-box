@@ -1,5 +1,6 @@
 class install {
 
+  include packages
   include vim
 
   Exec {

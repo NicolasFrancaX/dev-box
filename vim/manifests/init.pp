@@ -13,6 +13,6 @@ class vim {
   }
 
   exec {"sudo -u $user vim -u $home/.vim/config/plugins/vundle.vim +BundleInstall +qa < $tty > $tty":
-    require => File["$home/.vim"],
+    require => [File["$home/.vim"], Package['gvim']],
   }
 }
