@@ -7,6 +7,7 @@ class install {
   include git
   include ruby
   include terminal
+  include tmux
   include vim
 
   Exec {
