@@ -30,21 +30,10 @@ class install {
 # mkdir -p ~/.config/Terminal
 # ln -sf $PWD/solarized/light/terminalrc ~/.config/Terminal/terminalrc
 # 
-# echo 'Change default shell to zsh'
-# 
 # chsh -s /bin/zsh
 
 
 
-# #!/bin/bash
-# 
-# # Add the following entry in /etc/pacman.conf
-# # to be able to install yaourt
-# # 
-# # [archlinuxfr]
-# # Server = http://repo.archlinux.fr/x86_64
-# 
-# 
 # yaourt -S --noconfirm       \
 # sudo                        \
 # xorg-server                 \
