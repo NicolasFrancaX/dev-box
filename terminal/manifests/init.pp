@@ -5,8 +5,21 @@ class terminal {
     target => "$basedir/terminal/files/oh-my-zsh",
   }
 
-  file {"$home/.config/Terminal/terminalrc":
+  file {"$home/.zshrc":
     ensure => link,
-    target => "$basedir/terminal/files/terminalrc",
+    target => "$home/.oh-my-zsh/zshrc",
+  }
+
+  file {[
+    "$home/.config",
+    "$home/.config/Terminal",
+  ]:
+    ensure => directory,
+  }
+
+  file {"$home/.config/Terminal/terminalrc":
+    ensure  => link,
+    target  => "$basedir/terminal/files/terminalrc",
+    require => File["$home/.config/Terminal"],
   }
 }
