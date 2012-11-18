@@ -1,61 +1,67 @@
 #!/bin/bash
 
-yaourt --version > /dev/null 2>&1 || {
+echo
+echo 'Checking pre-requisites'
+echo
 
-cat <<ErrorMessage
-You need yaourt to install dotfiles.
+if git --version > /dev/null 2>&1; then
+  echo 'git: ok'
+else
+  echo 'Installing git'
 
-To install it, run the following as root:
+  sudo pacman -S git
+fi
 
-  # echo -e "\\n[archlinuxfr]\\nServer = http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
-  # pacman -Syu
-  # pacman -S yaourt
-ErrorMessage
+if yaourt --version > /dev/null 2>&1; then
+  echo 'yaourt: ok'
+else
+  echo 'Installing yaourt'
 
-exit
+  sudo sh <<SCRIPT
+    echo -e "\n[archlinuxfr]\nServer = http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
+    pacman -Syu
+    pacman -S yaourt
+SCRIPT
 
-}
+fi
 
-puppet --version > /dev/null 2>&1 || {
+if puppet --version > /dev/null 2>&1; then
+  echo 'puppet: ok'
+else
+  echo 'Installing puppet'
 
-cat <<ErrorMessage
-You need Puppet to install dotfiles.
+  yaourt -S ruby-puppet --noconfirm
+fi
 
-To install it, run the following:
+echo
+echo 'Cloning dotfiles'
+echo
 
-  $ yaourt -S ruby-puppet --noconfirm
-ErrorMessage
+if [ "${PWD##*/}" != "dotfiles" ]; then
+  git clone git://github.com/leafac/dotfiles.git
+  cd dotfiles
+else
+  echo 'No need to clone dotfiles'
+fi
 
-exit
-
-}
-
-git --version > /dev/null 2>&1 || {
-
-cat <<ErrorMessage
-You need git to install dotfiles.
-
-To install it, run the following as root:
-
-  # pacman -S git
-ErrorMessage
-
-exit
-
-}
-
+echo
 echo 'Updating git submodules'
+echo
 
 git submodule init
 git submodule update
 
-BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-echo 'Starting install with Puppet'
+echo
+echo 'Installing with Puppet'
+echo
 
 sudo \
   FACTER_home="$HOME" \
   FACTER_user="$USER" \
-  FACTER_basedir="$BASEDIR" \
+  FACTER_basedir="$PWD" \
   FACTER_tty=`tty` \
-  puppet apply -e 'include install' --modulepath $BASEDIR
+  puppet apply -e 'include install' --modulepath $PWD
+
+echo
+echo 'The end!'
+echo
