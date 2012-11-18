@@ -60,7 +60,7 @@ sudo \
   FACTER_user="$USER" \
   FACTER_basedir="$PWD" \
   FACTER_tty=`tty` \
-  puppet apply -e 'include install' --modulepath $PWD
+  puppet apply -e 'include install' --modulepath "$PWD"
 
 echo
 echo 'The end!'
