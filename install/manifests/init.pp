@@ -21,7 +21,3 @@ class install {
     ],
   }
 }
-
-# ln -sf $PWD/tmux/tmux.conf             ~/.tmux.conf
-# 
-# chsh -s /bin/zsh

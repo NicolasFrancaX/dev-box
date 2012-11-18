@@ -22,4 +22,8 @@ class terminal {
     target  => "$basedir/terminal/files/terminalrc",
     require => File["$home/.config/Terminal"],
   }
+
+  exec {"chsh -s /bin/zsh $user":
+    require => Package['zsh'],
+  }
 }
