@@ -6,6 +6,7 @@ class install {
   include fonts
   include git
   include ruby
+  include terminal
   include vim
 
   Exec {
