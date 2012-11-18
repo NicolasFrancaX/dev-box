@@ -5,17 +5,17 @@ echo 'Checking pre-requisites'
 echo
 
 if git --version > /dev/null 2>&1; then
-  echo 'git: ok'
+  echo 'Git: ok'
 else
-  echo 'Installing git'
+  echo 'Installing Git'
 
   sudo pacman -S git
 fi
 
 if yaourt --version > /dev/null 2>&1; then
-  echo 'yaourt: ok'
+  echo 'Yaourt: ok'
 else
-  echo 'Installing yaourt'
+  echo 'Installing Yaourt'
 
   sudo sh <<SCRIPT
     echo -e "\n[archlinuxfr]\nServer = http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
@@ -26,9 +26,9 @@ SCRIPT
 fi
 
 if puppet --version > /dev/null 2>&1; then
-  echo 'puppet: ok'
+  echo 'Puppet: ok'
 else
-  echo 'Installing puppet'
+  echo 'Installing Puppet'
 
   yaourt -S ruby-puppet --noconfirm
 fi
