@@ -1,3 +1,3 @@
-nnoremap <F3>      :BufExplorer<cr>
-vnoremap <F3> <ESC>:BufExplorer<cr>
-inoremap <F3> <ESC>:BufExplorer<cr>
+nnoremap <leader>b      :BufExplorer<cr>
+vnoremap <leader>b <ESC>:BufExplorer<cr>
+inoremap <leader>b <ESC>:BufExplorer<cr>
