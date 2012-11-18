@@ -1,6 +1,5 @@
 class vim {
 
-
   file {"$home/.vim":
     ensure => link,
     target => "$basedir/vim/files",

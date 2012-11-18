@@ -16,20 +16,6 @@ class install {
   }
 }
 
-# #!/bin/bash
-# 
-# echo 'Refer to packages.md to confirm that every package'
-# echo 'is installed before proceeding!'
-# 
-# read
-# 
-# echo 'Assert that submodules were correctly initialized'
-# 
-# git submodule init
-# git submodule update
-# 
-# echo 'Linking dotfiles on home folder'
-# 
 # ln -sf $PWD/vim                        ~/.vim
 # ln -sf ~/.vim/vimrc                    ~/.vimrc
 # ln -sf $PWD/git/gitconfig              ~/.gitconfig
