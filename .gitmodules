@@ -4,6 +4,3 @@
 [submodule "terminal/files/oh-my-zsh"]
 	path = terminal/files/oh-my-zsh
 	url = git://github.com/leafac/oh-my-zsh.git
-[submodule "terminal/files/solarized"]
-	path = terminal/files/solarized
-	url = git://github.com/sgerrand/xfce4-terminal-colors-solarized.git
