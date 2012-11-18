@@ -6,4 +6,4 @@ autocmd vimenter * if !argc() | NERDTree | endif
 
 nnoremap <leader>m      :NERDTreeToggle<cr>
 vnoremap <leader>m      :NERDTreeToggle<cr>
-inoremap <leader>m <ESC>:NERDTreeToggle<cr>
+inoremap <leader>m <esc>:NERDTreeToggle<cr>
