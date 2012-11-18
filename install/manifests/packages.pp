@@ -182,4 +182,8 @@ class install::packages {
   package {'shutter':
     ensure => present,
   }
+
+  package {'truecrypt':
+    ensure => present,
+  }
 }
