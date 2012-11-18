@@ -2,11 +2,11 @@
 	name = Leandro Facchinetti
 	email = leafac@gmail.com
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = <%= "#{ @basedir }/git/files/ignore" %>
 	editor = vim
 [color]
 	ui = true
 [commit]
-	template = ~/.gitmessage
+	template = <%= "#{ @basedir }/git/files/message" %>
 [merge]
 	tool = vimdiff
