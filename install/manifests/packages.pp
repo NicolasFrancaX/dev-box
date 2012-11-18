@@ -1,5 +1,5 @@
 class install::packages {
   package {'gvim':
-    ensure => installed,
+    ensure => present,
   }
 }

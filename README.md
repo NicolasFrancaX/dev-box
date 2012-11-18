@@ -5,9 +5,31 @@ Keeping versioned dotfiles so that I can maintain consistent development environ
 
 It's tailored for [Arch Linux](http://www.archlinux.org/). But should work with minor changes on other environments.
 
+[Puppet](http://puppetlabs.com/) is used in the install.
+
 Install
 -------
 
-[Puppet](http://puppetlabs.com/) is used to provision my development machine. Have it installed and on `PATH`.
+To install the dotfiles in Arch Linux, you'll need `git`, `yaourt` and `puppet`.
 
-To apply, run `install.sh`.
+Install them with:
+
+```bash
+$ sudo echo -e "\\n[archlinuxfr]\\nServer = http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
+$ sudo pacman -Syu
+$ sudo pacman -S git yaourt
+$ yaourt -S ruby-puppet --noconfirm
+```
+
+Clone this repository:
+
+```bash
+$ git clone git://github.com/leafac/dotfiles.git
+```
+
+Then, run `install.sh`.
+
+```bash
+$ cd dotfiles
+$ ./install.sh
+```
