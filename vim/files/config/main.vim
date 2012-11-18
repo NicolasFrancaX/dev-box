@@ -16,5 +16,6 @@ source ~/.vim/config/plugins/powerline.vim
 source ~/.vim/config/plugins/tabular.vim
 source ~/.vim/config/plugins/tagbar.vim
 source ~/.vim/config/plugins/fugitive.vim
+source ~/.vim/config/plugins/gundo.vim
 
 colorscheme solarized
