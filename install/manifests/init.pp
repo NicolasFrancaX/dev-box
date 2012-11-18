@@ -3,6 +3,7 @@ class install {
   include packages
   include gems
 
+  include fonts
   include git
   include vim
 
@@ -23,7 +24,6 @@ class install {
 # ln -sf $PWD/tmux/tmux.conf             ~/.tmux.conf
 # ln -sf $PWD/oh-my-zsh                  ~/.oh-my-zsh
 # ln -sf ~/.oh-my-zsh/zshrc              ~/.zshrc
-# ln -sf $PWD/fonts                      ~/.fonts
 # mkdir -p ~/.config/Terminal
 # ln -sf $PWD/solarized/light/terminalrc ~/.config/Terminal/terminalrc
 # 
