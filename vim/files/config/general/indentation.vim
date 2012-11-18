@@ -1,7 +1,7 @@
 " Remove trailing spaces
 
-nnoremap <leader>S :%s/\s\+$//e<cr>
-vnoremap <leader>S :s/\s\+$//e<cr>gv
+nnoremap <leader>S :%s/\s\+$//e<cr>:noh<cr>
+vnoremap <leader>S :s/\s\+$//e<cr>:noh<cr>gv
 
 " Default spaces
 
