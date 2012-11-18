@@ -11,12 +11,10 @@ source ~/.vim/config/general/debug.vim
 
 source ~/.vim/config/plugins/ack.vim
 source ~/.vim/config/plugins/nerdtree.vim
-source ~/.vim/config/plugins/showmarks.vim
 source ~/.vim/config/plugins/vimux.vim
 source ~/.vim/config/plugins/powerline.vim
 source ~/.vim/config/plugins/tabular.vim
 source ~/.vim/config/plugins/taglist.vim
-source ~/.vim/config/plugins/buffer-explorer.vim
 source ~/.vim/config/plugins/fugitive.vim
 
 colorscheme solarized
