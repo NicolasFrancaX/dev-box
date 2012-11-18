@@ -15,7 +15,7 @@ cmap w!! w !sudo tee % >/dev/null
 vnoremap < <gv
 vnoremap > >gv
 
-" Fix common typos
+" Fix common typos like :Q or :W
 
 command! -bang -nargs=* -complete=file E e<bang> <args>
 command! -bang -nargs=* -complete=file W w<bang> <args>
