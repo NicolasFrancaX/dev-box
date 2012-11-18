@@ -10,6 +10,4 @@ Install
 
 [Puppet](http://puppetlabs.com/) is used to provision my development machine. Have it installed and on `PATH`.
 
-```bash
-$ ./install.sh
-```
+To apply, run `install.sh`.
