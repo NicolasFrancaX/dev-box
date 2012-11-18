@@ -1,13 +1,13 @@
 " Disable arrow keys to enforce good habits
 
-nnoremap <up>    <NOP>
-nnoremap <down>  <NOP>
-nnoremap <left>  <NOP>
-nnoremap <right> <NOP>
-inoremap <up>    <NOP>
-inoremap <down>  <NOP>
-inoremap <left>  <NOP>
-inoremap <right> <NOP>
+nnoremap <up>    <nop>
+nnoremap <down>  <nop>
+nnoremap <left>  <nop>
+nnoremap <right> <nop>
+inoremap <up>    <nop>
+inoremap <down>  <nop>
+inoremap <left>  <nop>
+inoremap <right> <nop>
 
 " Correct navigation on line wrap
 
@@ -18,14 +18,14 @@ nnoremap 0 g0
 
 " Window navigation
 
-nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <leader>s <C-w>s<C-w>j
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <leader>w <c-w>v<c-w>l
+nnoremap <leader>s <c-w>s<c-w>j
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 
 " Tab navigation
 
-nnoremap <S-l> :tabnext<cr>
-nnoremap <S-h> :tabprev<cr>
+nnoremap <s-l> :tabnext<cr>
+nnoremap <s-h> :tabprev<cr>
