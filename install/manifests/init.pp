@@ -5,6 +5,7 @@ class install {
 
   include fonts
   include git
+  include ruby
   include vim
 
   Exec {
@@ -19,8 +20,6 @@ class install {
   }
 }
 
-# ln -sf $PWD/ruby/irbrc                 ~/.irbrc
-# ln -sf $PWD/ruby/gemrc                 ~/.gemrc
 # ln -sf $PWD/tmux/tmux.conf             ~/.tmux.conf
 # ln -sf $PWD/oh-my-zsh                  ~/.oh-my-zsh
 # ln -sf ~/.oh-my-zsh/zshrc              ~/.zshrc
