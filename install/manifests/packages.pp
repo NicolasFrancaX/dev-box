@@ -186,4 +186,8 @@ class install::packages {
   package {'truecrypt':
     ensure => present,
   }
+
+  package {'xclip':
+    ensure => present,
+  }
 }
