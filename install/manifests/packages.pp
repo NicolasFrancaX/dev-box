@@ -1,201 +1,102 @@
 class install::packages {
-  package {'gvim':
-    ensure => present,
-  }
 
-  package {'ttf-dejavu':
-    ensure => present,
-  }
+  package {'gvim':}
 
-  package {'ttf-droid':
-    ensure => present,
-  }
+  package {'ttf-dejavu':}
 
-  package {'unzip':
-    ensure => present,
-  }
+  package {'ttf-droid':}
 
-  package {'unrar':
-    ensure => present,
-  }
+  package {'unzip':}
 
-  package {'ntfs-3g':
-    ensure => present,
-  }
+  package {'unrar':}
 
-  package {'wicd':
-    ensure => present,
-  }
+  package {'ntfs-3g':}
 
-  package {'wicd-gtk':
-    ensure => present,
-  }
+  package {'wicd':}
 
-  package {'pmount':
-    ensure => present,
-  }
+  package {'wicd-gtk':}
 
-  package {'epdfview':
-    ensure => present,
-  }
+  package {'pmount':}
 
-  package {'parole':
-    ensure => present,
-  }
+  package {'epdfview':}
 
-  package {'gstreamer0.10-plugins':
-    ensure => present,
-  }
+  package {'parole':}
 
-  package {'chromium':
-    ensure => present,
-  }
+  package {'gstreamer0.10-plugins':}
 
-  package {'flashplugin':
-    ensure => present,
-  }
+  package {'chromium':}
 
-  package {'xcursor-neutral':
-    ensure => present,
-  }
+  package {'flashplugin':}
 
-  package {'slim-themes':
-    ensure => present,
-  }
+  package {'xcursor-neutral':}
 
-  package {'archlinux-themes-slim':
-    ensure => present,
-  }
+  package {'slim-themes':}
 
-  package {'archlinux-wallpaper':
-    ensure => present,
-  }
+  package {'archlinux-themes-slim':}
 
-  package {'openssh':
-    ensure => present,
-  }
+  package {'archlinux-wallpaper':}
 
-  package {'tmux':
-    ensure => present,
-  }
+  package {'openssh':}
 
-  package {'htop':
-    ensure => present,
-  }
+  package {'tmux':}
 
-  package {'irssi':
-    ensure => present,
-  }
+  package {'htop':}
 
-  package {'bitlbee':
-    ensure => present,
-  }
+  package {'irssi':}
 
-  package {'gnu-netcat':
-    ensure => present,
-  }
+  package {'bitlbee':}
 
-  package {'git':
-    ensure => present,
-  }
+  package {'gnu-netcat':}
 
-  package {'ruby':
-    ensure => present,
-  }
+  package {'git':}
 
-  package {'zsh':
-    ensure => present,
-  }
+  package {'ruby':}
 
-  package {'tig':
-    ensure => present,
-  }
+  package {'zsh':}
 
-  package {'ack':
-    ensure => present,
-  }
+  package {'tig':}
 
-  package {'ctags':
-    ensure => present,
-  }
+  package {'ack':}
 
-  package {'nodejs':
-    ensure => present,
-  }
+  package {'ctags':}
 
-  package {'postgresql':
-    ensure => present,
-  }
+  package {'nodejs':}
 
-  package {'pgadmin3':
-    ensure => present,
-  }
+  package {'postgresql':}
 
-  package {'eclipse':
-    ensure => present,
-  }
+  package {'pgadmin3':}
 
-  package {'tree':
-    ensure => present,
-  }
+  package {'eclipse':}
 
-  package {'gimp':
-    ensure => present,
-  }
+  package {'tree':}
 
-  package {'dnsutils':
-    ensure => present,
-  }
+  package {'gimp':}
 
-  package {'calibre':
-    ensure => present,
-  }
+  package {'dnsutils':}
 
-  package {'ttf-ms-fonts':
-    ensure => present,
-  }
+  package {'calibre':}
 
-  package {'file-roller':
-    ensure => present,
-  }
+  package {'ttf-ms-fonts':}
 
-  package {'dropbox':
-    ensure => present,
-  }
+  package {'file-roller':}
 
-  package {'thunar-dropbox':
-    ensure => present,
-  }
+  package {'dropbox':}
 
-  package {'dropbox-daemon':
-    ensure => present,
-  }
+  package {'thunar-dropbox':}
 
-  package {'elementary-xfce-icons':
-    ensure => present,
-  }
+  package {'dropbox-daemon':}
 
-  package {'herrie':
-    ensure => present,
-  }
+  package {'elementary-xfce-icons':}
 
-  package {'shutter':
-    ensure => present,
-  }
+  package {'herrie':}
 
-  package {'truecrypt':
-    ensure => present,
-  }
+  package {'shutter':}
 
-  package {'xclip':
-    ensure => present,
-  }
+  package {'truecrypt':}
 
-  package {'virtualbox':
-    ensure => present,
-  }
+  package {'xclip':}
 
-  package {'virtualbox-guest-iso':
-    ensure => present,
-  }
+  package {'virtualbox':}
+
+  package {'virtualbox-guest-iso':}
 }

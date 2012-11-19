@@ -1,17 +1,12 @@
 class install::gems {
+
   Package {
     provider => gem,
   }
 
-  package {'bundler':
-    ensure => present,
-  }
+  package {'bundler':}
 
-  package {'wirble':
-    ensure => present,
-  }
+  package {'wirble':}
 
-  package {'pry':
-    ensure => present,
-  }
+  package {'pry':}
 }

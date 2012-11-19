@@ -10,6 +10,10 @@ class install {
   include tmux
   include vim
 
+  Package {
+    ensure => present,
+  }
+
   Exec {
     path => [
       '/usr/local/bin',
