@@ -25,6 +25,14 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
+" Resize windows
+
+nnoremap <c-n> 5<c-w>>
+nnoremap <c-m> 5<c-w><
+
+nnoremap + 5<c-w>+
+nnoremap _ 5<c-w>-
+
 " Tab navigation
 
 nnoremap <s-l> :tabnext<cr>
