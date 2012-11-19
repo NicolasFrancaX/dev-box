@@ -11,5 +11,5 @@ Install
 -------
 
 ```bash
-curl https://github.com/leafac/dotfiles/blob/master/install.sh | /bin/sh
+$ curl https://raw.github.com/leafac/dotfiles/master/install.sh | /bin/sh
 ```
