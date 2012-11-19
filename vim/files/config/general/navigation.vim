@@ -18,8 +18,8 @@ nnoremap 0 g0
 
 " Window navigation
 
-nnoremap <leader>w <c-w>v<c-w>l
-nnoremap <leader>s <c-w>s<c-w>j
+nnoremap <leader>\| <c-w>v<c-w>l
+nnoremap <leader>- <c-w>s<c-w>j
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
