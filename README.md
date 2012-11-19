@@ -13,3 +13,7 @@ Install
 ```bash
 $ curl http://dotfiles.leafac.com | /bin/sh
 ```
+
+---
+
+![Thanks, Allan!](http://cdn.memegenerator.net/instances/400x/30468032.jpg)
