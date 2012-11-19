@@ -24,6 +24,7 @@ Bundle 'leafac/vim-puppet'
 Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-repeat'
+Bundle 'smerrill/vagrant-vim'
 
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
