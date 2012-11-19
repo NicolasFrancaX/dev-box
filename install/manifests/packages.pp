@@ -190,4 +190,12 @@ class install::packages {
   package {'xclip':
     ensure => present,
   }
+
+  package {'virtualbox':
+    ensure => present,
+  }
+
+  package {'virtualbox-guest-iso':
+    ensure => present,
+  }
 }
