@@ -30,7 +30,7 @@ if puppet --version > /dev/null 2>&1; then
 else
   echo 'Installing Puppet'
 
-  yaourt -S ruby-puppet --noconfirm
+  sudo gem install puppet
 fi
 
 echo
