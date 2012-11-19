@@ -25,12 +25,25 @@ SCRIPT
 
 fi
 
-if puppet --version > /dev/null 2>&1; then
+if ruby --version > /dev/null 2>&1; then
+  echo 'Ruby: ok'
+else
+  echo 'Installing Ruby'
+
+  sudo pacman -S ruby
+fi
+
+if sudo puppet --version > /dev/null 2>&1; then
   echo 'Puppet: ok'
 else
   echo 'Installing Puppet'
 
-  sudo gem install puppet
+  sudo sh <<SCRIPT
+    gem install puppet
+    groupadd puppet
+SCRIPT
+
+  export PATH="/root/.gem/ruby/1.9.1/bin:$PATH"
 fi
 
 echo
