@@ -99,4 +99,13 @@ class install::packages {
   package {'virtualbox':}
 
   package {'virtualbox-guest-iso':}
+
+  package {'python2-pip':}
+
+  # http://drbunsen.github.com/formd/
+
+  file {'/usr/bin/formd':
+    ensure => link,
+    target => "$basedir/install/files/formd",
+  }
 }
