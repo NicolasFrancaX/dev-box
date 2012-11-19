@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ ! $(cat /etc/os-release 2>&1) =~ "Arch Linux" ]];then
+  echo "This installation script is for Arch Linux [https://www.archlinux.org] only!"
+  exit
+fi
+
 echo
 echo 'Checking pre-requisites'
 echo
