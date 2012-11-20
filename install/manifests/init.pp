@@ -5,6 +5,7 @@ class install {
 
   include fonts
   include git
+  include keyboard
   include ruby
   include terminal
   include tmux
