@@ -1,5 +1,7 @@
 #!/bin/bash
 
+BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 if [[ ! $(cat /etc/os-release 2>&1) =~ "Arch Linux" ]];then
   echo "This installation script is for Arch Linux [https://www.archlinux.org] only!"
   exit
@@ -55,9 +57,10 @@ echo
 echo 'Cloning dotfiles'
 echo
 
-if [ "${PWD##*/}" != "dotfiles" ]; then
+if [ "${BASEDIR##*/}" != "dotfiles" ]; then
   git clone git://github.com/leafac/dotfiles.git
   cd dotfiles
+  BASEDIR="$BASEDIR/dotfiles"
 else
   echo 'No need to clone dotfiles'
 fi
@@ -76,9 +79,9 @@ echo
 sudo \
   FACTER_home="$HOME" \
   FACTER_user="$USER" \
-  FACTER_basedir="$PWD" \
+  FACTER_basedir="$BASEDIR" \
   FACTER_tty=`tty` \
-  puppet apply -e 'include install' --modulepath "$PWD"
+  puppet apply -e 'include install' --modulepath "$BASEDIR"
 
 echo
 echo 'The end!'
