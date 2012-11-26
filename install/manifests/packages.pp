@@ -100,7 +100,9 @@ class install::packages {
 
   package {'virtualbox-guest-iso':}
 
-  package {'python2-pip':}
+  package {'python':}
+
+  package {'python-pip':}
 
   # http://drbunsen.github.com/formd/
 
