@@ -120,9 +120,3 @@ Check `vim/files/config` for a full list of features. Configs are arranged in se
 ---
 
 **Note**: this isn't installed automatically. You need to import it manually in Eclipse. Damn GUIs :smile:
-
----
-
-![Thanks for the meme, Allan!](http://cdn.memegenerator.net/instances/400x/30468032.jpg)
-
-Thanks for the meme, Allan!
