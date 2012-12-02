@@ -6,6 +6,8 @@ class install::packages {
 
   package {'ttf-droid':}
 
+  package {'zip':}
+
   package {'unzip':}
 
   package {'unrar':}
