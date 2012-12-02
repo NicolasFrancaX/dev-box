@@ -46,7 +46,7 @@ It includes all other modules for the complete install.
 
 ### Vim
 
-![Vim](images-for-README/vim.png)
+![Vim](https://github.com/leafac/dotfiles/blob/master/images-for-README/vim.png)
 
 * [Vundle](https://github.com/gmarik/vundle) for dependency management.
 * [Solarized](http://ethanschoonover.com/solarized) colorscheme.
@@ -74,7 +74,7 @@ Check `vim/files/config` for a full list of features. Configs are arranged in se
 
 ### tmux
 
-![tmux](images-for-README/tmux.png)
+![tmux](https://github.com/leafac/dotfiles/blob/master/images-for-README/tmux.png)
 
 * Beautiful status bar.
 * Change prefix to `ctrl + a` because it's easier to reach on regular keyboards.
@@ -83,6 +83,8 @@ Check `vim/files/config` for a full list of features. Configs are arranged in se
 * OS clipboard integration. `<prefix><esc>` for getting in selection mode. `v` starts the selection and `y` finishes it. Then `<prefix>y` sends the selected text to the clipboard and `<prefix>p` pastes in tmux.
 
 ### Terminal
+
+![Terminal](https://github.com/leafac/dotfiles/blob/master/images-for-README/terminal.png)
 
 * [Solarized colors](https://github.com/sgerrand/xfce4-terminal-colors-solarized/blob/master/light/terminalrc) for [Xfce Terminal](http://docs.xfce.org/apps/terminal/start).
 * zsh with lots of plugins using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
