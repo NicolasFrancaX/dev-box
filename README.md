@@ -68,8 +68,6 @@ It includes all other modules for the complete install.
     * `,=<space>` for aligning with [tabular](https://github.com/godlygeek/tabular).
     * ...
 
----
-
 Check `vim/files/config` for a full list of features. Configs are arranged in separate files for better organization and well commented.
 
 ### tmux
@@ -105,8 +103,6 @@ Check `vim/files/config` for a full list of features. Configs are arranged in se
 * Sensible global ignores.
 * Nice default commit message :laughing:
 
----
-
 **Note**: in `git/templates/config.erb` there's my name and e-mail. You should change this before using this dotfiles.
 
 ### Fonts
@@ -116,7 +112,5 @@ Check `vim/files/config` for a full list of features. Configs are arranged in se
 ### Eclipse
 
 * [Google Style Guide for Java as a Eclipse Formatter](http://code.google.com/p/google-styleguide/source/browse/trunk/eclipse-java-google-style.xml).
-
----
 
 **Note**: this isn't installed automatically. You need to import it manually in Eclipse. Damn GUIs :smile:
