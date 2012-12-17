@@ -30,3 +30,8 @@ command! -bang Qa qa<bang>
 " Yank from the cursor to the end of the line, to be consistent with C and D
 
 nnoremap Y y$
+
+" Make pasting in visual-mode sane, by not replacing the register content with
+" was erased
+
+vnoremap p pgvy
