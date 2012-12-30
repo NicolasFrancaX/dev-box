@@ -22,3 +22,5 @@ ColorPalette15=#838394949696
 ColorPalette16=#fdfdf6f6e3e3
 
 FontName=Droid Sans Mono for Powerline 12
+
+MiscMenubarDefault=FALSE

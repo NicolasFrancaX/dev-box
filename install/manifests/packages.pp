@@ -106,6 +106,10 @@ class install::packages {
 
   package {'python-pip':}
 
+  package {'espeak':}
+
+  package {'cloc':}
+
   # http://drbunsen.github.com/formd/
 
   file {'/usr/bin/formd':
