@@ -110,6 +110,8 @@ class install::packages {
 
   package {'cloc':}
 
+  package {'figlet':}
+
   # http://drbunsen.github.com/formd/
 
   file {'/usr/bin/formd':
