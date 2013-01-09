@@ -59,11 +59,12 @@ echo
 
 if [ "${BASEDIR##*/}" != "dotfiles" ]; then
   git clone git://github.com/leafac/dotfiles.git
-  cd dotfiles
   BASEDIR="$BASEDIR/dotfiles"
 else
   echo 'No need to clone dotfiles'
 fi
+
+cd $BASEDIR
 
 echo
 echo 'Updating git submodules'
