@@ -38,6 +38,8 @@ class install::packages {
 
   package {'archlinux-wallpaper':}
 
+  package {'xscreensaver':}
+
   package {'openssh':}
 
   package {'tmux':}
