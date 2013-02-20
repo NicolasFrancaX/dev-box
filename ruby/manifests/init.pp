@@ -9,4 +9,9 @@ class ruby {
     ensure => link,
     target => "$basedir/ruby/files/gemrc",
   }
+
+  file {"$home/.rbenv":
+    ensure => link,
+    target => "$basedir/ruby/files/rbenv",
+  }
 }
