@@ -20,4 +20,14 @@ class ruby {
     target  => "$basedir/ruby/files/rbenv-plugins",
     require => File["$home/.rbenv"],
   }
+
+  file {"$home/.bundle":
+    ensure => directory,
+  }
+
+  file {"$home/.bundle/config":
+    ensure  => link,
+    target  => "$basedir/ruby/files/bundle",
+    require => File["$home/.bundle"],
+  }
 }
