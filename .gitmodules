@@ -4,3 +4,6 @@
 [submodule "terminal/files/oh-my-zsh"]
 	path = terminal/files/oh-my-zsh
 	url = git://github.com/leafac/oh-my-zsh.git
+[submodule "ruby/files/rbenv"]
+	path = ruby/files/rbenv
+	url = git://github.com/sstephenson/rbenv.git
