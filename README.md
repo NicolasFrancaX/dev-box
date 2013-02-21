@@ -57,7 +57,11 @@ It includes all other modules for the complete install.
 * Avoid typos like `:W` or hitting `;` instead of holding `shift` for `:`.
 * `:w!!` to salve write protected files.
 * Easy split in windows with `,|` and `,-`.
-* Easy navigation in windows with `ctrl + [hjkl]` and tabs with `ctrl + [hl]`.* Smart placement of temporary files. All `.swp` are placed in a folder separate from the current folder.* Disable arrow keys for best practices.* Many awesome plugins already installed and configured!    * `,a` for search with [ack][11].
+* Easy navigation in windows with `ctrl + [hjkl]` and tabs with `ctrl + [hl]`.
+* Smart placement of temporary files. All `.swp` are placed in a folder separate from the current folder.
+* Disable arrow keys for best practices.
+* Many awesome plugins already installed and configured!
+    * `,a` for search with [ack][11].
     * `,fr` and `,fi` for handling links in [Markdown][12] files using [formd][13].
     * `,u` for Vim undo tree navigation with [Gundo][14].
     * `,m` for [NERDTree][15].

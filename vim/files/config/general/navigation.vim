@@ -27,8 +27,8 @@ nnoremap <c-l> <c-w>l
 
 " Resize windows
 
+nnoremap <c-b> 5<c-w><
 nnoremap <c-n> 5<c-w>>
-nnoremap <c-m> 5<c-w><
 
 nnoremap + 5<c-w>+
 nnoremap _ 5<c-w>-
