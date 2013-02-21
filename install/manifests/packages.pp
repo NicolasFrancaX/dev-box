@@ -48,8 +48,6 @@ class install::packages {
 
   package {'irssi':}
 
-  package {'bitlbee':}
-
   package {'gnu-netcat':}
 
   package {'git':}
