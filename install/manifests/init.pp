@@ -1,7 +1,6 @@
 class install {
 
   include packages
-  include gems
 
   include fonts
   include git

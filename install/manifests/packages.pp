@@ -54,6 +54,8 @@ class install::packages {
 
   package {'ruby':}
 
+  package {'ruby-docs':}
+
   package {'zsh':}
 
   package {'tig':}
