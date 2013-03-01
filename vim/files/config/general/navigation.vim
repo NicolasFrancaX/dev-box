@@ -16,6 +16,11 @@ nnoremap k gk
 nnoremap $ g$
 nnoremap 0 g0
 
+vnoremap j gj
+vnoremap k gk
+vnoremap $ g$
+vnoremap 0 g0
+
 " Window navigation
 
 nnoremap <leader>\| <c-w>v<c-w>l
