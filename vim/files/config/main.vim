@@ -21,3 +21,5 @@ source ~/.vim/config/plugins/syntastic.vim
 source ~/.vim/config/plugins/formd.vim
 
 colorscheme solarized
+
+source ~/.vim/config/plugins/gitgutter.vim
