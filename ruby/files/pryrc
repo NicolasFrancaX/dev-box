@@ -1,0 +1,12 @@
+# https://github.com/nixme/pry-debugger
+
+[
+  ['continue', 'c'],
+  ['step',     's'],
+  ['next',     'n'],
+  ['finish',   'f'],
+].each { |(command, shortcut)|
+  Pry
+    .commands
+    .alias_command shortcut, command if Pry.commands.commands.include? command
+}
