@@ -116,6 +116,8 @@ class install::packages {
 
   package {'heroku-toolbelt':}
 
+  package {'whois':}
+
   # http://drbunsen.github.com/formd/
 
   file {'/usr/bin/formd':
