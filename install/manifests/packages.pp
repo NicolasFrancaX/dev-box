@@ -114,6 +114,8 @@ class install::packages {
 
   package {'figlet':}
 
+  package {'heroku-toolbelt':}
+
   # http://drbunsen.github.com/formd/
 
   file {'/usr/bin/formd':
