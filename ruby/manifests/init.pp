@@ -26,6 +26,12 @@ class ruby {
     require => File["$home/.rbenv"],
   }
 
+  file {"$home/.rbenv/default-gems":
+    ensure  => link,
+    target  => "$basedir/ruby/files/default-gems",
+    require => File["$home/.rbenv"],
+  }
+
   file {"$home/.bundle":
     ensure => directory,
   }

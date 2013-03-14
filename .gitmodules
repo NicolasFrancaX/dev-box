@@ -7,6 +7,10 @@
 [submodule "ruby/files/rbenv"]
 	path = ruby/files/rbenv
 	url = git://github.com/sstephenson/rbenv.git
+	ignore = dirty
 [submodule "ruby/files/rbenv-plugins/ruby-build"]
 	path = ruby/files/rbenv-plugins/ruby-build
 	url = git://github.com/sstephenson/ruby-build.git
+[submodule "ruby/files/rbenv-plugins/rbenv-default-gems"]
+	path = ruby/files/rbenv-plugins/rbenv-default-gems
+	url = git://github.com/sstephenson/rbenv-default-gems.git
