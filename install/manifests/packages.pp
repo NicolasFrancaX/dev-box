@@ -20,7 +20,7 @@ class install::packages {
 
   package {'pmount':}
 
-  package {'epdfview':}
+  package {'evince':}
 
   package {'parole':}
 
