@@ -118,6 +118,8 @@ class install::packages {
 
   package {'whois':}
 
+  package {'graphviz':}
+
   # http://drbunsen.github.com/formd/
 
   file {'/usr/bin/formd':
