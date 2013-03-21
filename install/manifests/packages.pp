@@ -120,6 +120,8 @@ class install::packages {
 
   package {'graphviz':}
 
+  package {'gparted':}
+
   # http://drbunsen.github.com/formd/
 
   file {'/usr/bin/formd':
