@@ -1,6 +1,6 @@
 bundler
 pry
-pry-debugger
+pry-nav
 foreman
 qwandry
 ruby-graphviz
