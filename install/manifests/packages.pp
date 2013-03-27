@@ -122,6 +122,8 @@ class install::packages {
 
   package {'gparted':}
 
+  package {'inkscape':}
+
   # http://drbunsen.github.com/formd/
 
   file {'/usr/bin/formd':
