@@ -124,6 +124,8 @@ class install::packages {
 
   package {'inkscape':}
 
+  package {'sshfs':}
+
   # http://drbunsen.github.com/formd/
 
   file {'/usr/bin/formd':
