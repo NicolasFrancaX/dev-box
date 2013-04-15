@@ -126,6 +126,8 @@ class install::packages {
 
   package {'sshfs':}
 
+  package {'wget':}
+
   # http://drbunsen.github.com/formd/
 
   file {'/usr/bin/formd':
