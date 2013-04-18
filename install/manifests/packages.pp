@@ -65,6 +65,8 @@ class install::packages {
     'inkscape',
     'sshfs',
     'wget',
+    'recordmydesktop',
+    'gtk-recordmydesktop',
   ]:}
 
   # http://drbunsen.github.com/formd/
