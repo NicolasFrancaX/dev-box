@@ -67,6 +67,7 @@ class install::packages {
     'wget',
     'recordmydesktop',
     'gtk-recordmydesktop',
+    'jq',
   ]:}
 
   # http://drbunsen.github.com/formd/
