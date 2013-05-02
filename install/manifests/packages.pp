@@ -68,6 +68,7 @@ class install::packages {
     'recordmydesktop',
     'gtk-recordmydesktop',
     'jq',
+    'rsync',
   ]:}
 
   # http://drbunsen.github.com/formd/
