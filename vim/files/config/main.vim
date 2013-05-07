@@ -7,6 +7,7 @@ source ~/.vim/config/general/search.vim
 source ~/.vim/config/general/clipboard.vim
 source ~/.vim/config/general/navigation.vim
 source ~/.vim/config/general/indentation.vim
+source ~/.vim/config/general/syntax.vim
 source ~/.vim/config/general/debug.vim
 
 source ~/.vim/config/plugins/ack.vim

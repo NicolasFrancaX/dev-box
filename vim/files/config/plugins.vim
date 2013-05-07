@@ -24,7 +24,6 @@ Bundle 'leafac/vim-puppet'
 Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-repeat'
-Bundle 'smerrill/vagrant-vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/rainbow_parentheses.vim'
 
