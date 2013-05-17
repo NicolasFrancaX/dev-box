@@ -11,3 +11,6 @@ target/
 
 # Ignore tags
 tags
+
+# Ignore Bundler files
+.bundle
