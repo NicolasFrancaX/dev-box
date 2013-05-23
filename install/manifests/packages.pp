@@ -70,6 +70,7 @@ class install::packages {
     'jq',
     'rsync',
     'mit-scheme',
+    'vlc',
   ]:}
 
   # http://drbunsen.github.com/formd/
