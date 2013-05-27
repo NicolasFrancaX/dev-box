@@ -25,5 +25,6 @@ class terminal {
 
   exec {"chsh -s /bin/zsh $user":
     require => Package['zsh'],
+    unless  => 'echo "$SHELL" | grep -q "zsh"',
   }
 }
