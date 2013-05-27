@@ -12,7 +12,6 @@ class install::packages {
     'wicd-gtk',
     'pmount',
     'evince',
-    'parole',
     'gstreamer0.10-plugins',
     'chromium',
     'flashplugin',
@@ -70,6 +69,8 @@ class install::packages {
     'jq',
     'rsync',
     'mit-scheme',
+    'vlc',
+    'vagrant',
   ]:}
 
   # http://drbunsen.github.com/formd/
