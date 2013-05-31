@@ -69,6 +69,7 @@ class site::packages {
     'mit-scheme',
     'vlc',
     'vagrant',
+    'httpie',
   ]:}
 
   # http://drbunsen.github.com/formd/
