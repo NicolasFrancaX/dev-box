@@ -11,7 +11,7 @@ Install
 -------
 
 ```bash
-$ curl http://dotfiles.leafac.com | /bin/sh
+$ curl http://dotfiles.leafac.com | bash
 ```
 
 Update

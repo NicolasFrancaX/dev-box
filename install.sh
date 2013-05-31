@@ -24,7 +24,7 @@ if yaourt --version > /dev/null 2>&1; then
 else
   echo 'Installing Yaourt'
 
-  sudo sh <<SCRIPT
+  sudo bash <<SCRIPT
     echo -e "\n[archlinuxfr]\nServer = http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
     pacman -Syu
     pacman -S yaourt
@@ -45,7 +45,7 @@ if sudo puppet --version > /dev/null 2>&1; then
 else
   echo 'Installing Puppet'
 
-  sudo sh <<SCRIPT
+  sudo bash <<SCRIPT
     gem install puppet
     groupadd puppet
 SCRIPT
