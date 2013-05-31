@@ -32,7 +32,7 @@ Features
 
 All the installation process is handled by [Puppet][3].
 
-Every folder in this repository (except for `eclise` and `images-for-README`) are [Puppet Modules][4].
+Every folder in this repository (except for `eclipse`) are [Puppet Modules][4].
 
 There's a `provision.sh` script to call Puppet with the correct parameters. It first runs a bootstrap checking if Puppet is installed along with [Git][5] and everything else that is needed. Then it runs the `install` module.
 
@@ -122,7 +122,7 @@ Check `vim/files/config` for a full list of features. Configs are arranged in se
 [4]: http://docs.puppetlabs.com/puppet/2.7/reference/modules_fundamentals.html
 [5]: http://git-scm.com/
 [6]: http://rubygems.org/
-[7]: https://raw.github.com/leafac/dotfiles/master/images-for-README/vim.png
+[7]: https://dl.dropboxusercontent.com/u/833400/dotfiles-images-for-readme/vim.png
 [8]: https://github.com/gmarik/vundle
 [9]: http://ethanschoonover.com/solarized
 [10]: http://vimcasts.org/episodes/tabs-and-spaces/
@@ -132,8 +132,8 @@ Check `vim/files/config` for a full list of features. Configs are arranged in se
 [14]: http://sjl.bitbucket.org/gundo.vim/
 [15]: https://github.com/scrooloose/nerdtree
 [16]: https://github.com/godlygeek/tabular
-[17]: https://raw.github.com/leafac/dotfiles/master/images-for-README/tmux.png
-[18]: https://raw.github.com/leafac/dotfiles/master/images-for-README/terminal.png
+[17]: https://dl.dropboxusercontent.com/u/833400/dotfiles-images-for-readme/tmux.png
+[18]: https://dl.dropboxusercontent.com/u/833400/dotfiles-images-for-readme/terminal.png
 [19]: https://github.com/sgerrand/xfce4-terminal-colors-solarized/blob/master/light/terminalrc
 [20]: http://docs.xfce.org/apps/terminal/start
 [21]: https://github.com/robbyrussell/oh-my-zsh
