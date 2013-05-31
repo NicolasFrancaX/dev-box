@@ -22,7 +22,7 @@ Whenever there are new configurations in this repository:
 ```bash
 $ cd .../path/to/dotfiles
 $ git pull
-$ ./install.sh
+$ ./provision.sh
 ```
 
 Features
@@ -34,9 +34,9 @@ All the installation process is handled by [Puppet][3].
 
 Every folder in this repository (except for `eclise` and `images-for-README`) are [Puppet Modules][4].
 
-There's a `install.sh` script to call Puppet with the correct parameters. It first runs a bootstrap checking if Puppet is installed along with [Git][5] and everything else that is needed. Then it runs the `install` module.
+There's a `provision.sh` script to call Puppet with the correct parameters. It first runs a bootstrap checking if Puppet is installed along with [Git][5] and everything else that is needed. Then it runs the `install` module.
 
-The `install.sh` script can be run any number of times, as it can perform incremental updates, thanks to how Puppet works. So, if there are any updates, you just need to run it again.
+The `provision.sh` script can be run any number of times, as it can perform incremental updates, thanks to how Puppet works. So, if there are any updates, you just need to run it again.
 
 ### Install module
 
