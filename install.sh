@@ -25,7 +25,7 @@ else
   echo 'Installing Yaourt'
 
   sudo bash <<SCRIPT
-    echo -e "\n[archlinuxfr]\nServer = http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
+    echo -e "\n[archlinuxfr]\nSigLevel = Never\nServer = http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
     pacman -Syu
     pacman -S yaourt
 SCRIPT
