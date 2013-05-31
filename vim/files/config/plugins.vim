@@ -26,6 +26,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-repeat'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'ruby-matchit'
 
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
