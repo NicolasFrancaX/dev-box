@@ -70,6 +70,7 @@ class site::packages {
     'vlc',
     'vagrant',
     'httpie',
+    'ntp',
   ]:}
 
   # http://drbunsen.github.com/formd/

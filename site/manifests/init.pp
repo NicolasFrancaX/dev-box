@@ -1,6 +1,7 @@
 class site {
 
   include packages
+  include services
 
   include fonts
   include git
@@ -12,6 +13,11 @@ class site {
 
   Package {
     ensure => present,
+  }
+
+  Service {
+    ensure => running,
+    enable => true,
   }
 
   Exec {
