@@ -1,4 +1,4 @@
-class install::packages {
+class site::packages {
 
   package {[
     'gvim',
@@ -75,6 +75,6 @@ class install::packages {
 
   file {'/usr/bin/formd':
     ensure => link,
-    target => "$basedir/install/files/formd",
+    target => "$basedir/site/files/formd",
   }
 }

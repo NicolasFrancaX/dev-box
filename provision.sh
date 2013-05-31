@@ -82,7 +82,7 @@ sudo \
   FACTER_user="$USER" \
   FACTER_basedir="$BASEDIR" \
   FACTER_tty=`tty` \
-  puppet apply -e 'include install' --modulepath "$BASEDIR"
+  puppet apply -e 'include site' --modulepath "$BASEDIR"
 
 echo
 echo 'The end!'

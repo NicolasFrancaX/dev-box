@@ -1,4 +1,4 @@
-class install {
+class site {
 
   include packages
 
