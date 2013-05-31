@@ -1,3 +1,43 @@
+#########
+#  Pry  #
+#########
+
 snippet pry "Require and bind Pry for debugging"
 require 'pry'; binding.pry # TODO: Remove this
+endsnippet
+
+###########
+#  RSpec  #
+###########
+
+snippet describe "Describe"
+describe '${1:description}' do
+	${2:# TODO}
+end
+endsnippet
+
+snippet context "Context"
+context '${1:description}' do
+	${2:# TODO}
+end
+endsnippet
+
+snippet it "It with {}"
+it { $0 }
+endsnippet
+
+snippet It "It with do...end"
+it '${1:description}' do
+	${2:# TODO}
+end
+endsnippet
+
+snippet specify "Specify with {}"
+specify { $0 }
+endsnippet
+
+snippet Specify  "Specify with do...end"
+specify '${1:description}' do
+	${2:# TODO}
+end
 endsnippet
