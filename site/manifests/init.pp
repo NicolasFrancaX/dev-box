@@ -1,15 +1,17 @@
 class site {
 
-  include packages
-  include services
+  class {'packages': }
+  class {'services':
+    require => Class['packages'],
+  }
 
-  include fonts
-  include git
-  include keyboard
-  include ruby
-  include terminal
-  include tmux
-  include vim
+  class {'fonts':    }
+  class {'git':      }
+  class {'keyboard': }
+  class {'ruby':     }
+  class {'terminal': }
+  class {'tmux':     }
+  class {'vim':      }
 
   Package {
     ensure => present,
