@@ -50,7 +50,7 @@ else
     groupadd puppet
 SCRIPT
 
-  export PATH="/root/.gem/ruby/1.9.1/bin:$PATH"
+  export PATH="/root/.gem/ruby/2.0.0/bin:$PATH"
 fi
 
 echo
