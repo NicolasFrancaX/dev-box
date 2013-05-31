@@ -21,6 +21,9 @@ source ~/.vim/config/plugins/gundo.vim
 source ~/.vim/config/plugins/syntastic.vim
 source ~/.vim/config/plugins/formd.vim
 source ~/.vim/config/plugins/rainbow_parentheses.vim
-source ~/.vim/config/plugins/gitgutter.vim
 
 colorscheme solarized
+
+" Gitgutter needs to be after the definition of the colorscheme.
+" Do not move it.
+source ~/.vim/config/plugins/gitgutter.vim
