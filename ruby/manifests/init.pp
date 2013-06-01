@@ -2,33 +2,33 @@ class ruby {
 
   file {"$home/.irbrc":
     ensure => link,
-    target => "$basedir/ruby/files/irbrc",
+    target => "$dotfiles_path/ruby/files/irbrc",
   }
 
   file {"$home/.pryrc":
     ensure => link,
-    target => "$basedir/ruby/files/pryrc",
+    target => "$dotfiles_path/ruby/files/pryrc",
   }
 
   file {"$home/.gemrc":
     ensure => link,
-    target => "$basedir/ruby/files/gemrc",
+    target => "$dotfiles_path/ruby/files/gemrc",
   }
 
   file {"$home/.rbenv":
     ensure => link,
-    target => "$basedir/ruby/files/rbenv",
+    target => "$dotfiles_path/ruby/files/rbenv",
   }
 
   file {"$home/.rbenv/plugins":
     ensure  => link,
-    target  => "$basedir/ruby/files/rbenv-plugins",
+    target  => "$dotfiles_path/ruby/files/rbenv-plugins",
     require => File["$home/.rbenv"],
   }
 
   file {"$home/.rbenv/default-gems":
     ensure  => link,
-    target  => "$basedir/ruby/files/default-gems",
+    target  => "$dotfiles_path/ruby/files/default-gems",
     require => File["$home/.rbenv"],
   }
 
@@ -38,7 +38,7 @@ class ruby {
 
   file {"$home/.bundle/config":
     ensure  => link,
-    target  => "$basedir/ruby/files/bundle",
+    target  => "$dotfiles_path/ruby/files/bundle",
     require => File["$home/.bundle"],
   }
 }

@@ -77,6 +77,6 @@ class site::packages {
 
   file {'/usr/bin/formd':
     ensure => link,
-    target => "$basedir/site/files/formd",
+    target => "$dotfiles_path/site/files/formd",
   }
 }

@@ -2,7 +2,7 @@ class terminal {
 
   file {"$home/.oh-my-zsh":
     ensure => link,
-    target => "$basedir/terminal/files/oh-my-zsh",
+    target => "$dotfiles_path/terminal/files/oh-my-zsh",
   }
 
   file {"$home/.zshrc":
@@ -19,7 +19,7 @@ class terminal {
 
   file {"$home/.config/Terminal/terminalrc":
     ensure  => link,
-    target  => "$basedir/terminal/files/terminalrc",
+    target  => "$dotfiles_path/terminal/files/terminalrc",
     require => File["$home/.config/Terminal"],
   }
 

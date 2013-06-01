@@ -4,6 +4,6 @@ class fonts {
 
   file {"$home/.fonts":
     ensure => link,
-    target => "$basedir/fonts/files",
+    target => "$dotfiles_path/fonts/files",
   }
 }

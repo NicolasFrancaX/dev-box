@@ -2,6 +2,6 @@ class keyboard {
 
   file {"$home/.Xmodmap":
     ensure => link,
-    target => "$basedir/keyboard/files/Xmodmap",
+    target => "$dotfiles_path/keyboard/files/Xmodmap",
   }
 }
