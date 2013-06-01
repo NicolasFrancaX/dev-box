@@ -25,6 +25,8 @@ The following pre-requisites are assumed to be present:
 $ curl http://dotfiles.leafac.com | bash
 ```
 
+If you have already cloned this repository, run `scripts/install.sh`.
+
 Update
 ------
 
@@ -33,7 +35,7 @@ Whenever there are new configurations in this repository:
 ```bash
 $ cd .../path/to/dotfiles
 $ git pull
-$ ./provision.sh
+$ scripts/provision.sh
 ```
 
 Features
@@ -43,7 +45,8 @@ Features
 
 All the installation process is handled by [Puppet][4].
 
-Every folder in this repository (except for `eclipse`) are [Puppet Modules][5].
+Every folder in this repository (except for `eclipse` and `scripts`) are
+[Puppet Modules][5].
 
 There's a `provision.sh` script to call Puppet with the correct parameters.
 It first runs a bootstrap checking if Puppet is installed along with [Git][6]

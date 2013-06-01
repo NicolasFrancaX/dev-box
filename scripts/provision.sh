@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Starts the provisioning with Puppet.
+#
+# This script should be called in the first provisioning and
+# after any changes are made to the configurations.
+
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
 git submodule init
