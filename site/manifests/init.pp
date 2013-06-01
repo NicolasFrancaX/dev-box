@@ -23,7 +23,7 @@ class site {
   }
 
   Exec {
-    path => [
+    path  => [
       '/usr/local/bin',
       '/usr/bin',
       '/bin',
@@ -31,5 +31,12 @@ class site {
       '/usr/sbin',
       '/sbin',
     ],
+    user  => $user,
+    group => 'users',
+  }
+
+  File {
+    owner => $user,
+    group => 'users',
   }
 }
