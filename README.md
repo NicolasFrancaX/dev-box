@@ -22,7 +22,7 @@ The following pre-requisites are assumed to be present:
 - Regular user with sudoer permission.
 
 ```bash
-$ curl http://dotfiles.leafac.com | bash
+$ curl -L dotfiles.leafac.com | bash
 ```
 
 If you have already cloned this repository, run `scripts/install.sh`.
