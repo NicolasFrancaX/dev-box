@@ -12,7 +12,6 @@ class site::packages {
     'wicd-gtk',
     'pmount',
     'evince',
-    'gstreamer0.10-plugins',
     'chromium',
     'flashplugin',
     'xcursor-neutral',
