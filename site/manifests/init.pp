@@ -4,6 +4,7 @@ class site {
   class {'services':
     require => Class['packages'],
   }
+  class {'virtualbox': }
 
   class {'fonts':    }
   class {'git':      }
