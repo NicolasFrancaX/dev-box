@@ -9,8 +9,8 @@ set ts=2 sts=2 sw=2 expandtab
 
 " Spaces for filetypes
 
-autocmd FileType makefile setlocal sts=4 sts=4 sw=4 noexpandtab
-autocmd FileType python   setlocal sts=4 sts=4 sw=4 expandtab
+autocmd FileType makefile setlocal ts=2 sts=2 sw=2 noexpandtab
+autocmd FileType python   setlocal ts=4 sts=4 sw=4 expandtab
 
 " Define Stab to set tabstop, softtabstop and shiftwidth to the same value
 " Reference: http://vimcasts.org/episodes/tabs-and-spaces/
