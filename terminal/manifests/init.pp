@@ -12,15 +12,16 @@ class terminal {
 
   file {[
     "$home/.config",
-    "$home/.config/Terminal",
+    "$home/.config/xfce4",
+    "$home/.config/xfce4/terminal",
   ]:
     ensure => directory,
   }
 
-  file {"$home/.config/Terminal/terminalrc":
+  file {"$home/.config/xfce4/terminal/terminalrc":
     ensure  => link,
     target  => "$dotfiles_path/terminal/files/terminalrc",
-    require => File["$home/.config/Terminal"],
+    require => File["$home/.config/xfce4/terminal"],
   }
 
   exec {"chsh -s /bin/zsh $user":
