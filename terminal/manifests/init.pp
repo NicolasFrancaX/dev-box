@@ -19,9 +19,8 @@ class terminal {
   }
 
   file {"$home/.config/xfce4/terminal/terminalrc":
-    ensure  => present,
-    source  => 'puppet:///modules/terminal/terminalrc',
-    target  => "$dotfiles_path/terminal/files/terminalrc",
+    ensure => link,
+    target => "$dotfiles_path/terminal/files/terminalrc",
     require => File["$home/.config/xfce4/terminal"],
   }
 
