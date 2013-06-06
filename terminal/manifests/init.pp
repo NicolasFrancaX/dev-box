@@ -18,8 +18,9 @@ class terminal {
   }
 
   file {"$home/.config/Terminal/terminalrc":
-    ensure  => link,
-    target  => "$dotfiles_path/terminal/files/terminalrc",
+    ensure  => present,
+    source  => 'puppet:///modules/terminal/terminalrc',
+    replace => true,
     require => File["$home/.config/Terminal"],
   }
 
