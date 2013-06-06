@@ -5,6 +5,6 @@ set statusline +=\ %m                     " modified flag
 set statusline +=%=                       " split point for left and right
                                           " justification
 set statusline +=%{fugitive#statusline()} " current branch
-set statusline +=\ %c                     " cursor column
 set statusline +=\ %l                     " cursor line
 set statusline +=/%L                      " total lines
+set statusline +=,%c                     " cursor column
