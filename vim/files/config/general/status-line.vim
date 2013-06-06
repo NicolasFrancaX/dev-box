@@ -7,4 +7,4 @@ set statusline +=%=                       " split point for left and right
 set statusline +=%{fugitive#statusline()} " current branch
 set statusline +=\ %l                     " cursor line
 set statusline +=/%L                      " total lines
-set statusline +=,%c                     " cursor column
+set statusline +=,%c                      " cursor column
