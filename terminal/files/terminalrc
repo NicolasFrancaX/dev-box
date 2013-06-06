@@ -1,11 +1,18 @@
 [Configuration]
 
-# Railscasts
+# Railscasts (dark)
 
-ColorCursor=#aa00aa00aa00
-ColorForeground=#ee66ee11ddcc
-ColorBackground=#22bb22bb22bb
-ColorPalette=#22bb22bb22bb;#ddaa44993399;#aa55cc226611;#ffffcc6666dd;#66dd99ccbbee;#bb66bb33eebb;#551199ff5500;#ee66ee11ddcc;#55aa664477ee;#ddaa44993399;#aa55cc226611;#ffffcc6666dd;#66dd99ccbbee;#bb66bb33eebb;#551199ff5500;#ff99ff77ff33
+# ColorCursor=#aa00aa00aa00
+# ColorForeground=#ee66ee11ddcc
+# ColorBackground=#22bb22bb22bb
+# ColorPalette=#22bb22bb22bb;#ddaa44993399;#aa55cc226611;#ffffcc6666dd;#66dd99ccbbee;#bb66bb33eebb;#551199ff5500;#ee66ee11ddcc;#55aa664477ee;#ddaa44993399;#aa55cc226611;#ffffcc6666dd;#66dd99ccbbee;#bb66bb33eebb;#551199ff5500;#ff99ff77ff33
+
+# Tomorrow (light)
+
+ColorCursor=#dd66dd66dd66
+ColorForeground=#44dd44dd44cc
+ColorBackground=#ffaaffaaffaa
+ColorPalette=#000000000000;#cc8822882299;#771188cc0000;#ff55887711ff;#44227711aaee;#88995599aa88;#33ee999999ff;#dd66dd66dd66;#88ee990088cc;#ffff33333344;#99eecc440000;#eeaabb770000;#55779955ee66;#bb777777ee00;#5544cceedd66;#eeffeeffeeff
 
 # Typography
 
