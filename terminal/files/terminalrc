@@ -1,11 +1,81 @@
-# Solarized theme from https://github.com/sgerrand/xfce4-terminal-colors-solarized/blob/master/light/terminalrc
-
 [Configuration]
-ColorCursor=#93a1a1
-ColorForeground=#002b36
-ColorBackground=#fdf6e3
-ColorPalette=#073642;#dc322f;#859900;#b58900;#268bd2;#d33682;#2aa198;#eee8d5;#002b36;#cb4b16;#586e75;#657b83;#839496;#6c71c4;#93a1a1;#fdf6e3
+
+# Colorschemes
+
+# base16-chalk
+
+#ColorCursor=#dd00dd00dd00
+#ColorForeground=#dd00dd00dd00
+#ColorBackground=#115511551155
+#ColorPalette=#115511551155;#ffbb99ffbb11;#aacccc226677;#ddddbb2266ff;#66ffcc22eeff;#ee11aa33eeee;#1122ccffcc00;#dd00dd00dd00;#550055005500;#ffbb99ffbb11;#aacccc226677;#ddddbb2266ff;#66ffcc22eeff;#ee11aa33eeee;#1122ccffcc00;#ff55ff55ff55
+
+# base16-default
+
+#ColorCursor=#dd00dd00dd00
+#ColorForeground=#dd00dd00dd00
+#ColorBackground=#115511551155
+#ColorPalette=#115511551155;#aacc44114422;#9900aa995599;#ff44bbff7755;#66aa99ffbb55;#aaaa775599ff;#7755bb55aaaa;#dd00dd00dd00;#550055005500;#aacc44114422;#9900aa995599;#ff44bbff7755;#66aa99ffbb55;#aaaa775599ff;#7755bb55aaaa;#ff55ff55ff55
+
+# base16-eighties
+
+#ColorCursor=#dd33dd00cc88
+#ColorForeground=#dd33dd00cc88
+#ColorBackground=#22dd22dd22dd
+#ColorPalette=#22dd22dd22dd;#ff22777777aa;#9999cccc9999;#ffffcccc6666;#66669999cccc;#cccc9999cccc;#6666cccccccc;#dd33dd00cc88;#774477336699;#ff22777777aa;#9999cccc9999;#ffffcccc6666;#66669999cccc;#cccc9999cccc;#6666cccccccc;#ff22ff00eecc
+
+# base16-greenscreen
+
+#ColorCursor=#0000bbbb0000
+#ColorForeground=#0000bbbb0000
+#ColorBackground=#000011110000
+#ColorPalette=#000011110000;#000077770000;#0000bbbb0000;#000077770000;#000099990000;#0000bbbb0000;#000055550000;#0000bbbb0000;#000077770000;#000077770000;#0000bbbb0000;#000077770000;#000099990000;#0000bbbb0000;#000055550000;#0000ffff0000
+
+# base16-mocha
+
+#ColorCursor=#dd00cc88cc66
+#ColorForeground=#dd00cc88cc66
+#ColorBackground=#33BB33222288
+#ColorPalette=#33BB33222288;#ccbb66007777;#bbeebb5555bb;#ff44bbcc8877;#88aabb33bb55;#aa8899bbbb99;#77bbbbddaa44;#dd00cc88cc66;#77ee770055aa;#ccbb66007777;#bbeebb5555bb;#ff44bbcc8877;#88aabb33bb55;#aa8899bbbb99;#77bbbbddaa44;#ff55eeeeeebb
+
+# base16-monokai
+
+#ColorCursor=#ff88ff88ff22
+#ColorForeground=#ff88ff88ff22
+#ColorBackground=#227722882222
+#ColorPalette=#227722882222;#ff9922667722;#aa66ee2222ee;#ff44bbff7755;#6666dd99eeff;#aaee8811ffff;#aa11eeffee44;#ff88ff88ff22;#7755771155ee;#ff9922667722;#aa66ee2222ee;#ff44bbff7755;#6666dd99eeff;#aaee8811ffff;#aa11eeffee44;#ff99ff88ff55
+
+# base16-ocean
+
+#ColorCursor=#cc00cc55ccee
+#ColorForeground=#cc00cc55ccee
+#ColorBackground=#22bb330033bb
+#ColorPalette=#22bb330033bb;#bbff661166aa;#aa33bbee88cc;#eebbccbb88bb;#88ffaa11bb33;#bb4488eeaadd;#9966bb55bb44;#cc00cc55ccee;#6655773377ee;#bbff661166aa;#aa33bbee88cc;#eebbccbb88bb;#88ffaa11bb33;#bb4488eeaadd;#9966bb55bb44;#eeffff11ff55
+
+# base16-railscasts
+
+ColorCursor=#ee66ee11ddcc
+ColorForeground=#aa88aa88aa88
+ColorBackground=#22bb22bb22bb
+ColorPalette=#22bb22bb22bb;#ddaa44993399;#aa55cc226611;#ffffcc6666dd;#66dd99ccbbee;#bb66bb33eebb;#551199ff5500;#ee66ee11ddcc;#55aa664477ee;#ddaa44993399;#227722993355;#33aa44005555;#66dd99ccbbee;#bb66bb33eebb;#551199ff5500;#ff99ff77ff33
+
+# base16-solarized
+
+#ColorCursor=#9933aa11aa11
+#ColorForeground=#9933aa11aa11
+#ColorBackground=#000022bb3366
+#ColorPalette=#000022bb3366;#ddcc332222ff;#885599990000;#bb5588990000;#226688bbdd22;#66cc7711cc44;#22aaaa119988;#9933aa11aa11;#665577bb8833;#ddcc332222ff;#885599990000;#bb5588990000;#226688bbdd22;#66cc7711cc44;#22aaaa119988;#ffddff66ee33
+
+# base16-tomorrow
+
+#ColorCursor=#cc55cc88cc66
+#ColorForeground=#cc55cc88cc66
+#ColorBackground=#11dd11ff2211
+#ColorPalette=#11dd11ff2211;#cccc66666666;#bb55bbdd6688;#ff00cc667744;#8811aa22bbee;#bb229944bbbb;#88aabbeebb77;#cc55cc88cc66;#996699889966;#cccc66666666;#bb55bbdd6688;#ff00cc667744;#8811aa22bbee;#bb229944bbbb;#88aabbeebb77;#ffffffffffff
+
+# Typography
 
 FontName=Menlo for Powerline 12
+
+# Window
 
 MiscMenubarDefault=FALSE
