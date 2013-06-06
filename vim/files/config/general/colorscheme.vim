@@ -1,2 +1,4 @@
-set background=dark
-source ~/.vim/config/colors/base16-railscasts.vim
+colorscheme railscasts
+hi ColorColumn ctermbg=234
+hi Search      ctermbg=241
+hi StatusLine  ctermbg=241 ctermfg=253
