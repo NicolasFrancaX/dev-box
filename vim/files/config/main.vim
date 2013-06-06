@@ -9,6 +9,7 @@ source ~/.vim/config/general/navigation.vim
 source ~/.vim/config/general/indentation.vim
 source ~/.vim/config/general/syntax.vim
 source ~/.vim/config/general/colorscheme.vim
+source ~/.vim/config/general/status-line.vim
 source ~/.vim/config/general/reload.vim
 
 source ~/.vim/config/plugins/ack.vim
