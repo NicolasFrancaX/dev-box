@@ -14,7 +14,6 @@ source ~/.vim/config/general/reload.vim
 source ~/.vim/config/plugins/ack.vim
 source ~/.vim/config/plugins/nerdtree.vim
 source ~/.vim/config/plugins/vimux.vim
-source ~/.vim/config/plugins/powerline.vim
 source ~/.vim/config/plugins/tabular.vim
 source ~/.vim/config/plugins/tagbar.vim
 source ~/.vim/config/plugins/fugitive.vim
