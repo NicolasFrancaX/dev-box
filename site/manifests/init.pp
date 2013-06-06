@@ -6,7 +6,6 @@ class site {
   }
   class {'virtualbox': }
 
-  class {'fonts':    }
   class {'git':      }
   class {'keyboard': }
   class {'ruby':     }
