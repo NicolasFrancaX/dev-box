@@ -1,5 +1,7 @@
 colorscheme Tomorrow
-hi Normal ctermbg=NONE
+hi Normal      ctermbg=NONE
+hi LineNr      ctermbg=255
+hi ColorColumn ctermbg=230
 
 "colorscheme railscasts
 "hi ColorColumn ctermbg=234
