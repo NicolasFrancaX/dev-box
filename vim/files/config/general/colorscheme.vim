@@ -2,6 +2,7 @@ colorscheme Tomorrow
 hi Normal      ctermbg=NONE
 hi LineNr      ctermbg=255
 hi ColorColumn ctermbg=230
+hi SpecialKey  ctermbg=229
 
 "colorscheme railscasts
 "hi ColorColumn ctermbg=234
