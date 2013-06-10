@@ -3,5 +3,6 @@ class site::services {
     'wicd',
     'slim',
     'ntpd',
+    'nfsd',
   ]: }
 }

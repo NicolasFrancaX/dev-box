@@ -71,6 +71,7 @@ class site::packages {
     'vagrant',
     'httpie',
     'ntp',
+    'nfs-utils',
   ]:}
 
   # http://drbunsen.github.com/formd/
