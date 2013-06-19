@@ -31,14 +31,4 @@ class ruby {
     target  => "$dotfiles_path/ruby/files/default-gems",
     require => File["$home/.rbenv"],
   }
-
-  file {"$home/.bundle":
-    ensure => directory,
-  }
-
-  file {"$home/.bundle/config":
-    ensure  => link,
-    target  => "$dotfiles_path/ruby/files/bundle",
-    require => File["$home/.bundle"],
-  }
 }
