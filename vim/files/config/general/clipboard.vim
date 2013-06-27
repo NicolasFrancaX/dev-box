@@ -4,4 +4,4 @@ set clipboard=unnamedplus
 
 " Toggle paste mode
 
-set pastetoggle=<f2>
+set pastetoggle=<leader>p
