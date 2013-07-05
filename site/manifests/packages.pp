@@ -9,6 +9,7 @@ class site::packages {
     'zip',
     'unzip',
     'unrar',
+    'p7zip',
     'ntfs-3g',
     'wicd',
     'wicd-gtk',
