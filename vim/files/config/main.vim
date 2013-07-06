@@ -22,5 +22,4 @@ source ~/.vim/config/plugins/gundo.vim
 source ~/.vim/config/plugins/syntastic.vim
 source ~/.vim/config/plugins/formd.vim
 source ~/.vim/config/plugins/rainbow_parentheses.vim
-source ~/.vim/config/plugins/ultisnips.vim
 source ~/.vim/config/plugins/gitgutter.vim
