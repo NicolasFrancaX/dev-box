@@ -63,8 +63,6 @@ class site::packages {
     'inkscape',
     'sshfs',
     'wget',
-    'recordmydesktop',
-    'gtk-recordmydesktop',
     'jq',
     'rsync',
     'mit-scheme',
