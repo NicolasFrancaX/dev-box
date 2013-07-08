@@ -73,6 +73,7 @@ class site::packages {
     'httpie',
     'ntp',
     'nfs-utils',
+    'simplescreenrecorder',
   ]:}
 
   # http://drbunsen.github.com/formd/
