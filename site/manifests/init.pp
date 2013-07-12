@@ -12,6 +12,7 @@ class site {
   class {'terminal': }
   class {'tmux':     }
   class {'vim':      }
+  class {'hosts':    }
 
   Package {
     ensure => present,
