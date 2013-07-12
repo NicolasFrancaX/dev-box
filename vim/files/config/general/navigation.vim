@@ -42,3 +42,7 @@ nnoremap _ 5<c-w>-
 
 nnoremap <s-l> :tabnext<cr>
 nnoremap <s-h> :tabprev<cr>
+
+" Keep cursor in place after yank
+
+vnoremap y ygv<esc>
