@@ -72,6 +72,8 @@ class site::packages {
     'ntp',
     'nfs-utils',
     'simplescreenrecorder',
+    'skype',
+    'encfs',
     'unetbootin',
   ]:}
 
