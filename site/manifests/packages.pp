@@ -72,6 +72,7 @@ class site::packages {
     'ntp',
     'nfs-utils',
     'simplescreenrecorder',
+    'unetbootin',
   ]:}
 
   # http://drbunsen.github.com/formd/
