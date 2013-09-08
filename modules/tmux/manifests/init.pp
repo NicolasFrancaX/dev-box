@@ -1,7 +1,7 @@
 class tmux {
   file {"$home/.tmux":
     ensure => link,
-    target => "$dev_box/tmux/files",
+    target => "$modulepath/tmux/files",
   }
 
   file {"$home/.tmux.conf":

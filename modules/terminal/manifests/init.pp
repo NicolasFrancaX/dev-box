@@ -11,7 +11,7 @@ class terminal {
 
   file { "$home/.config/xfce4/terminal/terminalrc":
     ensure  => link,
-    target  => "$dev_box/terminal/files/terminalrc",
+    target  => "$modulepath/terminal/files/terminalrc",
     require => File["$home/.config/xfce4/terminal"],
   }
 

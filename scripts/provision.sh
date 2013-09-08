@@ -5,11 +5,11 @@
 # This script should be called in the first provisioning and
 # after any changes are made to the configurations.
 
-DEV_BOX="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+MODULEPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../modules" && pwd )"
 
 sudo env \
   FACTER_home="$HOME" \
   FACTER_user="$USER" \
-  FACTER_dev_box="$DEV_BOX" \
+  FACTER_modulepath="$MODULEPATH" \
   FACTER_tty=`tty` \
-  puppet apply scripts/site.pp --modulepath "$DEV_BOX"
+  puppet apply scripts/site.pp --modulepath "$MODULEPATH"
