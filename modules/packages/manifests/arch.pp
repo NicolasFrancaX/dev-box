@@ -1,4 +1,4 @@
-class machine::packages {
+class packages::arch {
   package {[
     # Text editors.
 

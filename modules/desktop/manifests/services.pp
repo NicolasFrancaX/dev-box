@@ -1,4 +1,4 @@
-class machine::services {
+class desktop::services {
   service { [
     'wicd',
     'ntpd',

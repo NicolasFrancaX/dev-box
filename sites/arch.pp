@@ -36,15 +36,26 @@ File {
   group  => 'users',
 }
 
-# Main stage.
+# Installation Stage.
 
-class { 'git':     }
-class { 'machine': }
+stage { 'installation': }
 
-# Configuration stage.
+class { 'packages::arch':
+  stage => installation,
+}
+
+# Configuration Stage.
 
 stage { 'configuration':
-  require => Stage['main'],
+  require => Stage['installation'],
+}
+
+class { 'desktop':
+  stage => configuration,
+}
+
+class { 'git':
+  stage => configuration,
 }
 
 class { 'terminal':
@@ -56,9 +67,5 @@ class { 'tmux':
 }
 
 class { 'vim':
-  stage => configuration,
-}
-
-class { 'virtualbox':
   stage => configuration,
 }
