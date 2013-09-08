@@ -34,7 +34,12 @@ File {
 
 stage { 'installation': }
 
-class { 'packages::arch':
+$operatingsystem_downcase = $operatingsystem ? {
+  archlinux => 'archlinux',
+  ubuntu    => 'ubuntu',
+}
+
+class { "packages::$operatingsystem_downcase":
   stage => installation,
 }
 
@@ -42,14 +47,6 @@ class { 'packages::arch':
 
 stage { 'configuration':
   require => Stage['installation'],
-}
-
-class { 'desktop':
-  stage => configuration,
-}
-
-class { 'git':
-  stage => configuration,
 }
 
 class { 'tmux':
@@ -62,4 +59,20 @@ class { 'vim':
 
 class { 'zsh':
   stage => configuration,
+}
+
+case $operatingsystem {
+  archlinux: {
+    class { 'desktop':
+      stage => configuration,
+    }
+
+    class { 'git':
+      stage => configuration,
+    }
+  }
+
+  ubuntu: {
+
+  }
 }
