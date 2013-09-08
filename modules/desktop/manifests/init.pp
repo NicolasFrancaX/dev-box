@@ -3,5 +3,6 @@ class desktop {
   class { 'keyboard':   }
   class { 'services':   }
   class { 'terminal':   }
+  class { 'vagrant':    }
   class { 'virtualbox': }
 }

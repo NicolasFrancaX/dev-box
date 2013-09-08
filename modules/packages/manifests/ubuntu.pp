@@ -4,6 +4,8 @@ class packages::ubuntu {
 
     'vim',
 
+    # Command line tools.
+
     'tmux',
     'zsh',
   ]: }
