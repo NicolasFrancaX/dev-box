@@ -1,16 +1,24 @@
-# Eclipse files
+# Eclipse.
+
 .project
 .classpath
 .settings/
 target/
 
-# gedit and vi temporary files
+# Gedit and Vim
+
 *~
 *.swp
 *.swo
 
-# Ignore tags
+# Ctags
+
 tags
 
-# Ignore Bundler files
+# Bundler
+
 .bundle
+
+# Vagrant.
+
+.vagrant
