@@ -1,13 +1,5 @@
 class terminal {
-  file { "$home/.oh-my-zsh":
-    ensure => link,
-    target => "$dotfiles/terminal/files/oh-my-zsh",
-  }
-
-  file { "$home/.zshrc":
-    ensure => link,
-    target => "$home/.oh-my-zsh/zshrc",
-  }
+  class { 'oh_my_zsh': }
 
   file { [
     "$home/.config",

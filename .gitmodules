@@ -1,7 +1,0 @@
-[submodule "vim/files/bundle/vundle"]
-	path = vim/files/bundle/vundle
-	url = git://github.com/gmarik/vundle.git
-	ignore = dirty
-[submodule "terminal/files/oh-my-zsh"]
-	path = terminal/files/oh-my-zsh
-	url = git://github.com/leafac/oh-my-zsh.git
