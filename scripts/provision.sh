@@ -12,4 +12,4 @@ sudo env \
   FACTER_user="$USER" \
   FACTER_modulepath="$MODULEPATH" \
   FACTER_tty=`tty` \
-  puppet apply scripts/site.pp --modulepath "$MODULEPATH"
+  puppet apply sites/arch.pp --modulepath "$MODULEPATH"
