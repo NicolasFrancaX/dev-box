@@ -16,3 +16,4 @@ FontName=Bitstream Vera Sans Mono 11
 # Window.
 
 MiscMenubarDefault=FALSE
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
