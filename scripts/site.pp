@@ -34,7 +34,15 @@ File {
 
 class { 'git':        }
 class { 'machine':    }
-class { 'terminal':   }
-class { 'tmux':       }
-class { 'vim':        }
-class { 'virtualbox': }
+class { 'terminal':
+  require => Class['machine::packages'],
+}
+class { 'tmux':
+  require => Class['machine::packages'],
+}
+class { 'vim':
+  require => Class['machine::packages'],
+}
+class { 'virtualbox':
+  require => Class['machine::packages'],
+}

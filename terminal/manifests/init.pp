@@ -19,5 +19,7 @@ class terminal {
     command => "chsh -s /bin/zsh $user",
     require => Package['zsh'],
     unless  => 'echo "$SHELL" | grep -q "zsh"',
+    user    => 'root',
+    group   => 'root',
   }
 }

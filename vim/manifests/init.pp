@@ -11,6 +11,6 @@ class vim {
   }
 
   class { 'vundle':
-    require => File["$home/.vim"],
+    require => File["$home/.vimrc"],
   }
 }

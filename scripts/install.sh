@@ -15,7 +15,6 @@
 function main {
   install_yaourt
   install_puppet
-  add_puppet_to_path
   call_first_provisioning
 }
 
@@ -29,19 +28,12 @@ Server = http://repo.archlinux.fr/\$arch
 YAOURT_REPOSITORY
 
 pacman -Sy
-pacman -S yaourt
+pacman -S yaourt --noconfirm
 SCRIPT
 }
 
 function install_puppet {
-sudo bash <<SCRIPT
-pacman -S ruby
-gem install puppet
-SCRIPT
-}
-
-function add_puppet_to_path {
-  export PATH="/root/.gem/ruby/2.0.0/bin:$PATH"
+  yaourt -S puppet --noconfirm
 }
 
 function call_first_provisioning {

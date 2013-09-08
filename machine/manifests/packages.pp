@@ -120,5 +120,11 @@ class machine::packages {
     # Live USB drives creator.
 
     'unetbootin',
-  ]:}
+
+    # Jokes.
+
+    'fortune-mod',
+    'cowsay',
+    'cmatrix',
+  ]: }
 }
