@@ -4,8 +4,10 @@ class vim::vundle {
     path       => "$home/.vim/bundle/vundle",
   }
 
-  exec { "update Vim plugins":
-    command => "sudo -u $user vim -u $home/.vim/config/plugins/vundle.vim +BundleInstall +qa < $tty > $tty",
-    require => Git::Clone['vundle'],
+  if $tty {
+    exec { "update Vim plugins":
+      command => "sudo -u $user vim -u $home/.vim/config/plugins/vundle.vim +BundleInstall +qa < $tty > $tty",
+      require => Git::Clone['vundle'],
+    }
   }
 }

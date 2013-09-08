@@ -30,9 +30,32 @@ File {
   group  => $group,
 }
 
+# Bootstrap Stage.
+
+stage { 'bootstrap': }
+
+class update_packages {
+  $command = $operatingsystem ? {
+    archlinux => 'pacman -Sy --noconfirm',
+    ubuntu    => 'apt-get update',
+  }
+
+  exec { 'update packages':
+    command => $command,
+    user    => 'root',
+    group   => 'root',
+  }
+}
+
+class { 'update_packages':
+  stage => bootstrap,
+}
+
 # Installation Stage.
 
-stage { 'installation': }
+stage { 'installation':
+  require => Stage['bootstrap'],
+}
 
 $operatingsystem_downcase = $operatingsystem ? {
   archlinux => 'archlinux',
