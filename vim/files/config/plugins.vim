@@ -1,6 +1,5 @@
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'widox/vim-buffer-explorer-plugin'
 Bundle 'tpope/vim-markdown'

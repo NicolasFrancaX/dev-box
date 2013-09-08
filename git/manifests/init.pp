@@ -1,8 +1,11 @@
 class git {
+  file { "$home/.gitconfig":
+    ensure => link,
+    target => "$dotfiles/git/files/config",
+  }
 
-  file {"$home/.gitconfig":
-    ensure  => present,
-    content => template('git/config.erb'),
-    require => Package['git'],
+  file { "$home/.gitignore":
+    ensure => link,
+    target => "$dotfiles/git/files/ignore",
   }
 }

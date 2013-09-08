@@ -1,16 +1,15 @@
 class terminal {
-
-  file {"$home/.oh-my-zsh":
+  file { "$home/.oh-my-zsh":
     ensure => link,
-    target => "$dotfiles_path/terminal/files/oh-my-zsh",
+    target => "$dotfiles/terminal/files/oh-my-zsh",
   }
 
-  file {"$home/.zshrc":
+  file { "$home/.zshrc":
     ensure => link,
     target => "$home/.oh-my-zsh/zshrc",
   }
 
-  file {[
+  file { [
     "$home/.config",
     "$home/.config/xfce4",
     "$home/.config/xfce4/terminal",
@@ -18,13 +17,14 @@ class terminal {
     ensure => directory,
   }
 
-  file {"$home/.config/xfce4/terminal/terminalrc":
-    ensure => link,
-    target => "$dotfiles_path/terminal/files/terminalrc",
+  file { "$home/.config/xfce4/terminal/terminalrc":
+    ensure  => link,
+    target  => "$dotfiles/terminal/files/terminalrc",
     require => File["$home/.config/xfce4/terminal"],
   }
 
-  exec {"chsh -s /bin/zsh $user":
+  exec { "change default shell for $user to zsh":
+    command => "chsh -s /bin/zsh $user",
     require => Package['zsh'],
     unless  => 'echo "$SHELL" | grep -q "zsh"',
   }

@@ -2,11 +2,9 @@
 	name = Leandro Facchinetti
 	email = git@leafac.com
 [core]
-	excludesfile = <%= "#{ @dotfiles_path }/git/files/ignore" %>
+	excludesfile = ~/.gitignore
 	editor = vim
 [color]
 	ui = true
 [merge]
 	tool = vimdiff
-[heroku]
-	remote = staging

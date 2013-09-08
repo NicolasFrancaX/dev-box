@@ -12,13 +12,40 @@
 # - `sudo`
 # - Regular user with sudoer permission
 
+function main {
+  install_yaourt
+  install_puppet
+  add_puppet_to_path
+  call_first_provisioning
+}
+
+function install_yaourt {
 sudo bash <<SCRIPT
-echo -e "\n[archlinuxfr]\nSigLevel = Never\nServer = http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
+
+cat >> /etc/pacman.conf << "YAOURT_REPOSITORY"
+[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/\$arch
+YAOURT_REPOSITORY
+
 pacman -Sy
-pacman -S git ruby yaourt
+pacman -S yaourt
+SCRIPT
+}
+
+function install_puppet {
+sudo bash <<SCRIPT
+pacman -S ruby
 gem install puppet
 SCRIPT
+}
 
-export PATH="/root/.gem/ruby/2.0.0/bin:$PATH"
+function add_puppet_to_path {
+  export PATH="/root/.gem/ruby/2.0.0/bin:$PATH"
+}
 
-exec scripts/provision.sh
+function call_first_provisioning {
+  exec scripts/provision.sh
+}
+
+main
