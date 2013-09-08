@@ -8,8 +8,15 @@ Vagrant.configure '2' do |config|
   config.vm.network :forwarded_port, guest: 5000, host: 5000 # foreman
 
   config.vm.provision :puppet do |puppet|
-    puppet.module_path    = 'modules'
+    modulepath = File.expand_path(File.join('..', 'modules'), __FILE__)
+    puppet.module_path    = modulepath
     puppet.manifests_path = 'sites'
     puppet.manifest_file  = 'ubuntu.pp'
+    puppet.facter = {
+      'home'       => '/home/vagrant',
+      'user'       => 'vagrant',
+      'modulepath' => modulepath,
+      'tty'        => `tty`,
+    }
   end
 end

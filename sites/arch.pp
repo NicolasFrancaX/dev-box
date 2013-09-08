@@ -1,4 +1,10 @@
-# Entry point for provisioning.
+# Arch Linux desktop.
+#
+# Pre-requisites:
+#
+# - Arch Linux installed with `base` and `base-devel` package groups.
+# - Xfce.
+# - SLiM.
 
 # General Puppet configuration.
 
@@ -32,17 +38,27 @@ File {
 
 # Main stage.
 
-class { 'git':        }
-class { 'machine':    }
+class { 'git':     }
+class { 'machine': }
+
+# Configuration stage.
+
+stage { 'configuration':
+  require => Stage['main'],
+}
+
 class { 'terminal':
-  require => Class['machine::packages'],
+  stage => configuration,
 }
+
 class { 'tmux':
-  require => Class['machine::packages'],
+  stage => configuration,
 }
+
 class { 'vim':
-  require => Class['machine::packages'],
+  stage => configuration,
 }
+
 class { 'virtualbox':
-  require => Class['machine::packages'],
+  stage => configuration,
 }

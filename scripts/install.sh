@@ -3,14 +3,6 @@
 # Install the bare minimum to bootstrap and start the first provisioning.
 #
 # This script should run only once for OS installation.
-#
-# Pre-requisites:
-#
-# - Arch Linux
-# - Xfce
-# - SLiM
-# - `sudo`
-# - Regular user with sudoer permission
 
 function main {
   install_yaourt
