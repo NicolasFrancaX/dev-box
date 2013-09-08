@@ -24,6 +24,6 @@ pacman -Syu
 pacman -S git
 SCRIPT
 
-git clone git://github.com/leafac/dotfiles.git
+git clone git://github.com/leafac/dev-box.git
 
-(cd dotfiles && exec scripts/install.sh)
+(cd dev-box && exec scripts/install.sh)

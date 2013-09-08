@@ -1,7 +1,7 @@
 class vim {
   file { "$home/.vim":
     ensure => link,
-    target => "$dotfiles/vim/files",
+    target => "$dev_box/vim/files",
   }
 
   file { "$home/.vimrc":
