@@ -1,2 +1,4 @@
 vim/files/spell/*
 vim/files/bundle/*
+code/*
+!code/.keep
