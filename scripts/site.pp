@@ -30,16 +30,6 @@ File {
   group  => 'users',
 }
 
-# Pre-install stage.
-
-stage { 'preinstall':
-  before => Stage['main'],
-}
-
-class { 'git::submodules':
-  stage => preinstall,
-}
-
 # Main stage.
 
 class { 'git':        }
