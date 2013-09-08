@@ -9,7 +9,7 @@ class desktop::terminal {
 
   file { "$home/.config/xfce4/terminal/terminalrc":
     ensure  => link,
-    target  => "$modulepath/terminal/files/terminalrc",
+    target  => "$modulepath/desktop/files/terminalrc",
     require => File["$home/.config/xfce4/terminal"],
   }
 }
