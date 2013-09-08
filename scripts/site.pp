@@ -1,10 +1,4 @@
-# Arch Linux desktop.
-#
-# Pre-requisites:
-#
-# - Arch Linux installed with `base` and `base-devel` package groups.
-# - Xfce.
-# - SLiM.
+# Entry point for Puppet provisioning catalog.
 
 # General Puppet configuration.
 
@@ -27,13 +21,13 @@ Exec {
     '/sbin',
   ],
   user  => $user,
-  group => 'users',
+  group => $group,
 }
 
 File {
   ensure => present,
   owner  => $user,
-  group  => 'users',
+  group  => $group,
 }
 
 # Installation Stage.
@@ -58,14 +52,14 @@ class { 'git':
   stage => configuration,
 }
 
-class { 'terminal':
-  stage => configuration,
-}
-
 class { 'tmux':
   stage => configuration,
 }
 
 class { 'vim':
+  stage => configuration,
+}
+
+class { 'zsh':
   stage => configuration,
 }

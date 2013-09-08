@@ -1,6 +1,7 @@
 class desktop {
-  class { 'services':   }
   class { 'hosts':      }
   class { 'keyboard':   }
+  class { 'services':   }
+  class { 'terminal':   }
   class { 'virtualbox': }
 }

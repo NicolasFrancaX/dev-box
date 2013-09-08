@@ -10,6 +10,7 @@ MODULEPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../modules" && pwd )"
 sudo env \
   FACTER_home="$HOME" \
   FACTER_user="$USER" \
+  FACTER_group="users" \
   FACTER_modulepath="$MODULEPATH" \
   FACTER_tty=`tty` \
-  puppet apply sites/arch.pp --modulepath "$MODULEPATH"
+  puppet apply scripts/site.pp --modulepath "$MODULEPATH"
