@@ -1,4 +1,5 @@
-vim/files/spell/*
-vim/files/bundle/*
+modules/vim/files/spell/*
+modules/vim/files/bundle/*
+modules/zsh/files/*
 code/*
 !code/.keep
