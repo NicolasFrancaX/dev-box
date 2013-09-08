@@ -9,6 +9,10 @@ Vagrant.configure '2' do |config|
   config.vm.network :forwarded_port, guest: 3000, host: 3000 # rails
   config.vm.network :forwarded_port, guest: 5000, host: 5000 # foreman
 
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ['modifyvm', :id, '--memory', '2048']
+  end
+
   config.vm.provision :puppet do |puppet|
     modulepath            = 'modules'
 
