@@ -55,13 +55,9 @@ case $operatingsystem {
 
 # Add Repository Sources Stage.
 
-class add_repository_sources {
-  ubuntu::ppa { 'chris-lea/node.js': }
-}
-
 case $operatingsystem {
   ubuntu: {
-    class { 'add_repository_sources':
+    class { 'ubuntu::repository_sources':
       stage => 'add-repository-sources',
     }
   }
