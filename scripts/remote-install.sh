@@ -12,8 +12,8 @@ if [[ ! $(cat /etc/os-release 2>&1) =~ "Arch Linux" ]];then
 fi
 
 sudo bash <<SCRIPT
-pacman -Syu
-pacman -S git
+pacman -Syu --noconfirm
+pacman -S git --noconfirm
 SCRIPT
 
 git clone git://github.com/leafac/dev-box.git
