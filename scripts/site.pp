@@ -30,24 +30,30 @@ File {
   group  => $group,
 }
 
-
-stage { 'bootstrap': }
-
-class install_ppa_support {
-  package { 'python-software-properties': }
+$operatingsystem_downcase = $operatingsystem ? {
+  archlinux => 'archlinux',
+  ubuntu    => 'ubuntu',
 }
+
+# Stages declaration.
+
+stage{ 'bootstrap':              } ->
+stage{ 'add-repository-sources': } ->
+stage{ 'update-packages':        } ->
+stage{ 'installation':           } ->
+stage{ 'configuration':          }
+
+# Bootstrap Stage.
 
 case $operatingsystem {
   ubuntu: {
-    class { 'install_ppa_support':
+    class { 'ubuntu::install_ppa_support':
       stage => 'bootstrap',
     }
   }
 }
 
-stage { 'add-repository-sources':
-  require => Stage['bootstrap'],
-}
+# Add Repository Sources Stage.
 
 class add_repository_sources {
   ubuntu::ppa { 'chris-lea/node.js': }
@@ -61,43 +67,19 @@ case $operatingsystem {
   }
 }
 
-stage { 'update-packages':
-  require => Stage['add-repository-sources'],
-}
+# Update Packages Stage.
 
-class update_packages {
-  $command = $operatingsystem ? {
-    archlinux => 'pacman -Sy --noconfirm',
-    ubuntu    => 'apt-get update',
-  }
-
-  exec { 'update packages':
-    command => $command,
-    user    => 'root',
-    group   => 'root',
-  }
-}
-
-class { 'update_packages':
+class { "${operatingsystem_downcase}::update_packages":
   stage => update-packages,
 }
 
-stage { 'installation':
-  require => Stage['update-packages'],
-}
+# Installation Stage.
 
-$operatingsystem_downcase = $operatingsystem ? {
-  archlinux => 'archlinux',
-  ubuntu    => 'ubuntu',
-}
-
-class { "packages::$operatingsystem_downcase":
+class { "${operatingsystem_downcase}::packages":
   stage => installation,
 }
 
-stage { 'configuration':
-  require => Stage['installation'],
-}
+# Configuration Stage.
 
 class { 'tmux':
   stage => configuration,

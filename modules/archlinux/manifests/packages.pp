@@ -1,4 +1,4 @@
-class packages::archlinux {
+class archlinux::packages {
   package {[
     # Text editors.
 

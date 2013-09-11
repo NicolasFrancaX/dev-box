@@ -1,4 +1,4 @@
-class packages::ubuntu {
+class ubuntu::packages {
   package { [
     # Text editor.
 
