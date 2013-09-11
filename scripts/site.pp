@@ -30,9 +30,40 @@ File {
   group  => $group,
 }
 
-# Bootstrap Stage.
 
 stage { 'bootstrap': }
+
+class install_ppa_support {
+  package { 'python-software-properties': }
+}
+
+case $operatingsystem {
+  ubuntu: {
+    class { 'install_ppa_support':
+      stage => 'bootstrap',
+    }
+  }
+}
+
+stage { 'add-repository-sources':
+  require => Stage['bootstrap'],
+}
+
+class add_repository_sources {
+  ubuntu::ppa { 'chris-lea/node.js': }
+}
+
+case $operatingsystem {
+  ubuntu: {
+    class { 'add_repository_sources':
+      stage => 'add-repository-sources',
+    }
+  }
+}
+
+stage { 'update-packages':
+  require => Stage['add-repository-sources'],
+}
 
 class update_packages {
   $command = $operatingsystem ? {
@@ -48,13 +79,11 @@ class update_packages {
 }
 
 class { 'update_packages':
-  stage => bootstrap,
+  stage => update-packages,
 }
 
-# Installation Stage.
-
 stage { 'installation':
-  require => Stage['bootstrap'],
+  require => Stage['update-packages'],
 }
 
 $operatingsystem_downcase = $operatingsystem ? {
@@ -65,8 +94,6 @@ $operatingsystem_downcase = $operatingsystem ? {
 class { "packages::$operatingsystem_downcase":
   stage => installation,
 }
-
-# Configuration Stage.
 
 stage { 'configuration':
   require => Stage['installation'],

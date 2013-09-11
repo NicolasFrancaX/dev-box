@@ -8,5 +8,9 @@ class packages::ubuntu {
 
     'tmux',
     'zsh',
+
+    # Programming languages.
+
+    'nodejs',
   ]: }
 }
