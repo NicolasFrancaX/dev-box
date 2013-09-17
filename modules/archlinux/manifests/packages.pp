@@ -29,6 +29,8 @@ class archlinux::packages {
 
     'pmount',
     'gparted',
+    'jmtpfs',
+    'ntfs-3g',
 
     # PDF reader.
 
@@ -76,6 +78,7 @@ class archlinux::packages {
     'jq',
     'rsync',
     'httpie',
+    'ncdu',
 
     # PostgreSQL database browser.
 
