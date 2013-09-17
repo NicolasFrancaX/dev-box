@@ -111,6 +111,10 @@ class archlinux::packages {
 
     'vlc',
 
+    # Audio editing.
+
+    'audacity',
+
     # Time synchronization.
 
     'ntp',
