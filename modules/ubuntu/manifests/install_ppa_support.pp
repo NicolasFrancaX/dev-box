@@ -1,11 +1,12 @@
 class ubuntu::install_ppa_support {
-  exec { 'update packages to install ppa support':
+  exec { "apt-get update for `python-software-properties'":
     command => 'apt-get update',
+    creates => '/usr/bin/apt-add-repository',
     user    => 'root',
     group   => 'root',
   }
 
   package { ['python-software-properties', 'build-essential']:
-    require => Exec['update packages to install ppa support'],
+    require => Exec["apt-get update for `python-software-properties'"],
   }
 }
