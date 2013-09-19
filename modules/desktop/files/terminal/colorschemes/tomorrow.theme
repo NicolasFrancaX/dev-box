@@ -1,19 +1,6 @@
-[Configuration]
-
-# Colorscheme.
-
-# Tomorrow (light)
-
+[Scheme]
+Name=Tomorrow (light)
 ColorCursor=#0000000
 ColorForeground=#44dd44dd44cc
 ColorBackground=#ffaaffaaffaa
 ColorPalette=#000000000000;#cc8822882299;#771188cc0000;#ff55887711ff;#44227711aaee;#88995599aa88;#33ee999999ff;#dd66dd66dd66;#88ee990088cc;#ffff33333344;#99eecc440000;#eeaabb770000;#55779955ee66;#bb777777ee00;#5544cceedd66;#eeffeeffeeff
-
-# Typography.
-
-FontName=Bitstream Vera Sans Mono 11
-
-# Window.
-
-MiscMenubarDefault=FALSE
-ScrollingBar=TERMINAL_SCROLLBAR_NONE
