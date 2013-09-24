@@ -109,5 +109,9 @@ case $operatingsystem {
       stage   => configuration,
       require => Class['ubuntu::zprofile'],
     }
+
+    class { 'ubuntu::services':
+      stage => configuration,
+    }
   }
 }

@@ -28,5 +28,9 @@ class ubuntu::packages {
     # Web server.
 
     'nginx',
+
+    # Cache.
+
+    'memcached',
   ]: }
 }
