@@ -9,6 +9,5 @@ class ubuntu::services {
     'nginx',
     'redis-server',
     'postgresql',
-    'memcached',
   ]: }
 }
