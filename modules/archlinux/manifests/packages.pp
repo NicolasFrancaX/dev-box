@@ -29,15 +29,20 @@ class archlinux::packages {
 
     'pmount',
     'gparted',
+    'jmtpfs',
+    'ntfs-3g',
+    'unetbootin',
 
     # PDF reader.
 
     'evince',
 
-    # Web Browser.
+    # Web.
 
     'chromium',
     'flashplugin',
+    'transmission-gtk',
+    'skype',
 
     # Appearance.
 
@@ -48,10 +53,6 @@ class archlinux::packages {
     # Screen saver.
 
     'xscreensaver',
-
-    # Communications.
-
-    'skype',
 
     # Command line tools.
 
@@ -76,6 +77,7 @@ class archlinux::packages {
     'jq',
     'rsync',
     'httpie',
+    'ncdu',
 
     # PostgreSQL database browser.
 
@@ -109,6 +111,10 @@ class archlinux::packages {
 
     'vlc',
 
+    # Audio editing.
+
+    'audacity',
+
     # Time synchronization.
 
     'ntp',
@@ -116,10 +122,6 @@ class archlinux::packages {
     # Encryption.
 
     'encfs',
-
-    # Live USB drives creator.
-
-    'unetbootin',
 
     # Jokes.
 
