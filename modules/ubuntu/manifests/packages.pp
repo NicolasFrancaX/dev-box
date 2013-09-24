@@ -24,5 +24,9 @@ class ubuntu::packages {
     'redis-server',
 
     'mongodb-10gen',
+
+    # Web server.
+
+    'nginx',
   ]: }
 }
