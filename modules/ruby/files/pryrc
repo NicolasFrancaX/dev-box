@@ -1,0 +1,10 @@
+[
+  ['continue', 'c'],
+  ['step',     's'],
+  ['next',     'n'],
+  ['finish',   'f'],
+].each { |(command, shortcut)|
+  if Pry.commands.commands.include? command
+    Pry.commands.alias_command shortcut, command
+  end
+}
