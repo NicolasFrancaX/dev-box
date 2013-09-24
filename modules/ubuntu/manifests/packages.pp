@@ -20,5 +20,9 @@ class ubuntu::packages {
     'postgresql-contrib-9.3',
     'libpq-dev',
     'postgresql-server-dev-9.3',
+
+    'redis-server',
+
+    'mongodb-10gen',
   ]: }
 }
