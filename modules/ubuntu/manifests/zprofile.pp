@@ -1,5 +1,6 @@
 class ubuntu::zprofile {
-  file { "$home/.zprofile":
+  file { '/etc/zsh/zprofile':
+    ensure => link,
     target => "$modulepath/ubuntu/files/zprofile",
   }
 }

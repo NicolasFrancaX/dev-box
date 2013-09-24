@@ -1,3 +1,8 @@
 #!/bin/zsh
 
-source $HOME/.chrubyrc
+[ -n "$ZSH_VERSION" ] || return
+
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
+chruby ruby

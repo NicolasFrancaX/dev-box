@@ -1,8 +1,7 @@
 class ruby {
   class { 'chruby': }
 
-  ruby::install{ 'ruby':
-    gems    => 'bundler pry-nav rails qwandry',
+  ruby::install { 'ruby-2.0.0-p247':
     require => Class['chruby'],
   }
 }

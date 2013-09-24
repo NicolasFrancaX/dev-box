@@ -17,8 +17,4 @@ class ruby::chruby(
     user    => 'root',
     group   => 'root',
   }
-
-  file { "$home/.chrubyrc":
-    target => "$modulepath/ruby/files/chrubyrc",
-  }
 }
