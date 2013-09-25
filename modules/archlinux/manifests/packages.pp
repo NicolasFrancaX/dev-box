@@ -31,6 +31,7 @@ class archlinux::packages {
     'gparted',
     'jmtpfs',
     'ntfs-3g',
+    'dosfstools',
     'unetbootin',
 
     # PDF reader.
