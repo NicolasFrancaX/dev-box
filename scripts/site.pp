@@ -101,6 +101,17 @@ case $operatingsystem {
   }
 
   ubuntu: {
+    class { 'ubuntu::zprofile':
+      stage => configuration,
+    }
 
+    class { 'ruby':
+      stage   => configuration,
+      require => Class['ubuntu::zprofile'],
+    }
+
+    class { 'ubuntu::services':
+      stage => configuration,
+    }
   }
 }
