@@ -9,6 +9,13 @@ class ubuntu::packages {
     'tmux',
     'zsh',
 
+    # Version control.
+
+    'git',
+
+
+    'zsh',
+
     # Programming languages.
 
     'nodejs',
