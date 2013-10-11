@@ -1,6 +1,10 @@
 class ubuntu::repository_sources {
-  ubuntu::ppa { 'chris-lea/node.js': }
-  ubuntu::ppa { 'rwky/redis': }
+  ubuntu::ppa { 'chris-lea/node.js':
+    creates => '/usr/bin/node',
+  }
+  ubuntu::ppa { 'rwky/redis':
+    creates => '/usr/bin/redis-cli',
+  }
 
   ubuntu::source { 'postgres':
     sources => 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main',
@@ -10,10 +14,12 @@ class ubuntu::repository_sources {
   ubuntu::source { 'mongodb':
     sources                => 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen',
     custom_add_key_command => 'apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10',
+    creates                => '/etc/init.d/mongodb',
   }
 
   ubuntu::source { 'nginx':
-    sources         => "deb http://nginx.org/packages/ubuntu/ precise nginx\ndeb-src http://nginx.org/packages/ubuntu/ precise nginx",
+    sources => 'deb http://nginx.org/packages/ubuntu/ precise nginx\ndeb-src http://nginx.org/packages/ubuntu/ precise nginx',
     key_url => 'http://nginx.org/keys/nginx_signing.key',
+    creates => '/etc/init.d/nginx',
   }
 }

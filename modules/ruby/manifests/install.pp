@@ -1,9 +1,13 @@
-define ruby::install($version = $title) {
-  exec { "install ruby `$version'":
-    command => "ruby-install $version",
-    creates => "/opt/rubies/$version",
+define ruby::install(
+  $ruby    = 'ruby',
+  $version = $title,
+) {
+  exec { "install Ruby `$version'":
+    command => "ruby-install $ruby $version",
+    creates => "/opt/rubies/$ruby-$version",
     user    => 'root',
     group   => 'root',
     timeout => 0,
+    require => Class['ruby::chruby'],
   }
 }
