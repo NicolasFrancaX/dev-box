@@ -4,7 +4,7 @@ define ruby::install(
   $gems    = false,
 ) {
   exec { "install Ruby `$version'":
-    command => "ruby-install $ruby $version",
+    command => $command,
     creates => "/opt/rubies/$ruby-$version",
     user    => 'root',
     group   => 'root',
@@ -13,9 +13,9 @@ define ruby::install(
   }
 
   if $gems {
-    exec { "install gem `$gems' for Ruby `$version'":
-      command => "chruby-exec $ruby $version -- gem install $gems",
-      require => Exec["install Ruby `$version'"],
-    }
+    $command = "ruby-install $ruby $version && chruby-exec $ruby $version -- gem install $gems"
+  }
+  else {
+    $command = "ruby-install $ruby $version"
   }
 }
