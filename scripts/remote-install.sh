@@ -18,4 +18,4 @@ SCRIPT
 
 git clone git://github.com/leafac/dev-box.git
 
-(cd dev-box && exec scripts/install.sh)
+(cd dev-box && mkdir code && exec scripts/install.sh)
