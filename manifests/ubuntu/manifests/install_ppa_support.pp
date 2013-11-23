@@ -7,6 +7,6 @@ class ubuntu::install_ppa_support {
   } ->
 
   package { ['python-software-properties', 'build-essential']:
-    require => Exec['apt-get update for system::bootstrap'],
+    require => Exec["apt-get update for `python-software-properties'"],
   }
 }

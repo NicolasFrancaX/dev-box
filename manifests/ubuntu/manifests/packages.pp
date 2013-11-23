@@ -8,10 +8,6 @@ class ubuntu::packages {
 
     'tmux',
     'zsh',
-
-    # Web server.
-
-    'nginx',
   ]:
     require => Class['ubuntu::install_ppa_support'],
   }
