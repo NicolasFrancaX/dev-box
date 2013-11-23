@@ -8,7 +8,6 @@ Vagrant.configure '2' do |config|
   config.vm.network :forwarded_port, guest:   80, host: 8080 # nginx
   config.vm.network :forwarded_port, guest: 3000, host: 3000 # rails
   config.vm.network :forwarded_port, guest: 5000, host: 5000 # foreman
-  config.vm.network :forwarded_port, guest: 9876, host: 9876 # karma
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ['modifyvm', :id, '--memory', '2048']
