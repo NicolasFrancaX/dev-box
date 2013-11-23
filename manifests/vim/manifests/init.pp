@@ -1,4 +1,6 @@
 class vim {
+  package { 'vim': }
+
   file { "$home/.vim":
     ensure => link,
     target => "$modulepath/vim/files",

@@ -1,4 +1,6 @@
 class tmux {
+  package { 'tmux': }
+
   file {"$home/.tmux":
     ensure => link,
     target => "$modulepath/tmux/files",

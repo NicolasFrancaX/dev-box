@@ -57,7 +57,6 @@ class archlinux::packages {
 
     # Command line tools.
 
-    'zsh',
     'tmux',
     'openssh',
     'gnu-netcat',
