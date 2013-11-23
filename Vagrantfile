@@ -15,17 +15,11 @@ Vagrant.configure '2' do |config|
   end
 
   config.vm.provision :puppet do |puppet|
-    modulepath            = 'modules'
-
-    puppet.module_path    = modulepath
-    puppet.manifests_path = 'scripts'
-    puppet.manifest_file  = 'site.pp'
-
     puppet.facter = {
       'home'       => '/home/vagrant',
       'user'       => 'vagrant',
       'group'      => 'vagrant',
-      'modulepath' => "/vagrant/#{ modulepath }",
+      'modulepath' => '/vagrant/manifests',
     }
   end
 end

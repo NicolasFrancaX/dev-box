@@ -5,7 +5,7 @@
 # This script should be called in the first provisioning and
 # after any changes are made to the configurations.
 
-MODULEPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../modules" && pwd )"
+MODULEPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../manifests" && pwd )"
 
 sudo env \
   FACTER_home="$HOME" \
@@ -13,4 +13,4 @@ sudo env \
   FACTER_group="users" \
   FACTER_modulepath="$MODULEPATH" \
   FACTER_tty=`tty` \
-  puppet apply scripts/site.pp --modulepath "$MODULEPATH"
+  puppet apply manifests/default.pp --modulepath "$MODULEPATH"
