@@ -104,8 +104,6 @@ class archlinux::packages {
 
     # Virtualization.
 
-    'virtualbox',
-    'virtualbox-guest-iso',
     'vagrant',
 
     # Video player.

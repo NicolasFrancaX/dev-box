@@ -1,4 +1,4 @@
-define system::ppa(
+define ubuntu::ppa(
   $identifier = $title,
   $creates,
 ) {
@@ -9,3 +9,4 @@ define system::ppa(
     creates => $creates,
   }
 }
+

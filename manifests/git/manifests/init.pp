@@ -1,4 +1,6 @@
 class git {
+  package { 'git': }
+
   file { "$home/.gitconfig":
     ensure => link,
     target => "$modulepath/git/files/config",

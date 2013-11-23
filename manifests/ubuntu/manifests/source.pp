@@ -20,9 +20,9 @@ define ubuntu::source(
 
   exec { "add ${service} key":
     command => "$add_key_command && apt-get --yes update",
+    require => File["/etc/apt/sources.list.d/${service}.list"],
     user    => 'root',
     group   => 'root',
-    require => File["/etc/apt/sources.list.d/${service}.list"],
     creates => $creates,
   }
 }

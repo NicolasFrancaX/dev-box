@@ -13,12 +13,12 @@ Service {
 
 Exec {
   path  => [
-    '/usr/local/bin',
-    '/usr/bin',
-    '/bin',
-    '/usr/local/sbin',
-    '/usr/sbin',
     '/sbin',
+    '/bin',
+    '/usr/sbin',
+    '/usr/local/sbin',
+    '/usr/bin',
+    '/usr/local/bin',
   ],
   user  => $user,
   group => $group,
@@ -30,88 +30,18 @@ File {
   group  => $group,
 }
 
-$operatingsystem_downcase = $operatingsystem ? {
-  archlinux => 'archlinux',
-  ubuntu    => 'ubuntu',
+# Pre-install Stage.
+
+stage { 'preinstall':
+  before => Stage['main'],
 }
 
-# Stages declaration.
-
-stage{ 'bootstrap':              } ->
-stage{ 'add-repository-sources': } ->
-stage{ 'update-packages':        } ->
-stage{ 'installation':           } ->
-stage{ 'configuration':          }
-
-# Bootstrap Stage.
-
-case $operatingsystem {
-  ubuntu: {
-    class { 'ubuntu::install_ppa_support':
-      stage => 'bootstrap',
-    }
-  }
+class { $operatingsystem ? {
+    archlinux => 'archlinux',
+    ubuntu    => 'ubuntu',
+  }:
+  stage => 'preinstall',
 }
 
-# Add Repository Sources Stage.
+# Main Stage.
 
-case $operatingsystem {
-  ubuntu: {
-    class { 'ubuntu::repository_sources':
-      stage => 'add-repository-sources',
-    }
-  }
-}
-
-# Update Packages Stage.
-
-class { "${operatingsystem_downcase}::update_packages":
-  stage => update-packages,
-}
-
-# Installation Stage.
-
-class { "${operatingsystem_downcase}::packages":
-  stage => installation,
-}
-
-# Configuration Stage.
-
-class { 'tmux':
-  stage => configuration,
-}
-
-class { 'vim':
-  stage => configuration,
-}
-
-class { 'zsh':
-  stage => configuration,
-}
-
-case $operatingsystem {
-  archlinux: {
-    class { 'desktop':
-      stage => configuration,
-    }
-
-    class { 'git':
-      stage => configuration,
-    }
-  }
-
-  ubuntu: {
-    class { 'ubuntu::zprofile':
-      stage => configuration,
-    }
-
-    class { 'ruby':
-      stage   => configuration,
-      require => Class['ubuntu::zprofile'],
-    }
-
-    class { 'ubuntu::services':
-      stage => configuration,
-    }
-  }
-}

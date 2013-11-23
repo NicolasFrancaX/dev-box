@@ -9,31 +9,10 @@ class ubuntu::packages {
     'tmux',
     'zsh',
 
-    # Version control.
-
-    'git',
-
-
-    'zsh',
-
-    # Programming languages.
-
-    'nodejs',
-
-    # Databases.
-
-    'postgresql-client-9.3',
-    'postgresql-9.3',
-    'postgresql-contrib-9.3',
-    'libpq-dev',
-    'postgresql-server-dev-9.3',
-
-    'redis-server',
-
-    'mongodb-10gen',
-
     # Web server.
 
     'nginx',
-  ]: }
+  ]:
+    require => Class['ubuntu::install_ppa_support'],
+  }
 }

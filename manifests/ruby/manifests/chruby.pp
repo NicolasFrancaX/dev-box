@@ -17,4 +17,11 @@ class ruby::chruby(
     user    => 'root',
     group   => 'root',
   }
+
+  file { '/etc/profile.d/chruby.sh':
+    ensure => link,
+    target => "$modulepath/ruby/files/chruby.sh",
+    owner  => 'root',
+    group  => 'root',
+  }
 }
