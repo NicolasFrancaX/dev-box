@@ -3,8 +3,6 @@ class archlinux::services {
     'wicd',
     'ntpd',
   ]:
-    ensure  => running,
-    enable  => true,
     require => [Package['wicd'], Package['ntp']],
   }
 }
