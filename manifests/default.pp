@@ -45,7 +45,6 @@ class { $operatingsystem ? {
 
 # Main Stage.
 
-class { 'archlinux':  }
 class { 'git':        }
 class { 'mongodb':    }
 class { 'nginx':      }

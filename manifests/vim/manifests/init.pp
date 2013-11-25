@@ -1,5 +1,8 @@
 class vim {
-  package { 'vim': }
+  package { $operatingsystem ? {
+    archlinux => 'gvim',
+    ubuntu    => 'vim',
+  }: }
 
   file { "$home/.vim":
     ensure => link,

@@ -2,7 +2,6 @@ class archlinux::packages {
   package {[
     # Text editors.
 
-    'gvim',
     'sublime-text',
 
     # Fonts.
@@ -57,7 +56,6 @@ class archlinux::packages {
 
     # Command line tools.
 
-    'tmux',
     'openssh',
     'gnu-netcat',
     'htop',
