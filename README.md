@@ -82,13 +82,13 @@ The configurations are split in several files for better readability.
 Installed for pairing sessions with people that don't use [Vim][vim]. No
 configuration is made.
 
-### Eclipse
+### [Eclipse][eclipse]
 
 * [Google Style Guide for Java][google-style-guide-for-java] Eclipse
   Formatter.
 
 **Note**: this isn't installed automatically. You need to import it manually
-in Eclipse. Damn GUIs :smile:
+in [Eclipse][eclipse]. Damn GUIs :smile:
 
 ### Command-line tools
 
@@ -219,3 +219,4 @@ THE SOFTWARE.
 [vagrant]: http://www.vagrantup.com/
 [git]: http://git-scm.com/
 [virtual-box]: https://virtualbox.org/
+[eclipse]: http://eclipse.org/
