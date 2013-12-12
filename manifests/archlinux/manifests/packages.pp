@@ -76,6 +76,7 @@ class archlinux::packages {
     'rsync',
     'httpie',
     'ncdu',
+    'hub',
 
     # PostgreSQL database browser.
 
