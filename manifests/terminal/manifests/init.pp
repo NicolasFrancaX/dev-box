@@ -10,20 +10,13 @@ class terminal {
 
     file { "$home/.config/xfce4/terminal/terminalrc":
       ensure  => link,
-      target  => "$modulepath/terminal/files/terminal/terminalrc",
+      target  => "$modulepath/terminal/files/terminalrc",
       require => File["$home/.config/xfce4/terminal"],
     }
 
     file { "/usr/share/xfce4/terminal/colorschemes/tomorrow.themes":
       ensure  => link,
-      target  => "$modulepath/terminal/files/terminal/colorschemes/tomorrow.theme",
-    }
-
-    file { '/etc/profile.d/chruby.sh':
-      ensure => link,
-      target => "$modulepath/zsh/files/custom/ruby.zsh",
-      owner  => 'root',
-      group  => 'root',
+      target  => "$modulepath/terminal/files/colorschemes/tomorrow.theme",
     }
   }
 }
