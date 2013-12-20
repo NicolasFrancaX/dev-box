@@ -141,7 +141,7 @@ Usage
 #### Install
 
 ```bash
-$ curl -L dotfiles.leafac.com | bash
+$ curl -L dev-box.leafac.com | bash
 ```
 
 #### Update
