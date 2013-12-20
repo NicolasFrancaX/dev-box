@@ -1,6 +1,6 @@
 class ruby::chruby(
-  $chruby_version       = '0.3.7',
-  $ruby_install_version = '0.3.0',
+  $chruby_version       = '0.3.8',
+  $ruby_install_version = '0.3.3',
 ) {
   exec { "install chruby $chruby_version":
     command => "wget -O chruby-${chruby_version}.tar.gz https://github.com/postmodern/chruby/archive/v${chruby_version}.tar.gz && tar -xzvf chruby-${chruby_version}.tar.gz && (cd chruby-${chruby_version} && make install) && rm chruby-${chruby_version}.tar.gz && rm -rf chruby-${chruby_version}",
