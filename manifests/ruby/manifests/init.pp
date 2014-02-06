@@ -20,9 +20,12 @@ class ruby {
     package { 'libcurl4-openssl-dev': }
 
     # Summarize dependencies.
+    package { 'libglib2.0-dev': }
+
+    # Nokogiri dependencies.
     package { [
+      'libxslt-dev',
       'libxml2-dev',
-      'libglib2.0-dev',
     ]: }
 
     # MiniMagick dependency.
