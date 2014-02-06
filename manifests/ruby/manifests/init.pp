@@ -1,6 +1,9 @@
 class ruby {
   if $operatingsystem == 'Ubuntu' {
-    class { 'chruby': }
+    class { [
+      'chruby',
+      'gems_dependencies'
+    ]: }
 
     ruby::install { '2.0.0-p247':
       gems => 'bundler pry pry-debugger pry-nav foreman procfile-upstart-exporter qwandry',
@@ -15,20 +18,5 @@ class ruby {
       ensure => link,
       target => "$modulepath/ruby/files/pryrc",
     }
-
-    # Curb dependency.
-    package { 'libcurl4-openssl-dev': }
-
-    # Summarize dependencies.
-    package { 'libglib2.0-dev': }
-
-    # Nokogiri dependencies.
-    package { [
-      'libxslt-dev',
-      'libxml2-dev',
-    ]: }
-
-    # MiniMagick dependency.
-    package { 'imagemagick': }
   }
 }
