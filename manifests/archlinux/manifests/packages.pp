@@ -32,6 +32,7 @@ class archlinux::packages {
     'ntfs-3g',
     'dosfstools',
     'unetbootin',
+    'nfs-utils',
 
     # PDF reader.
 
