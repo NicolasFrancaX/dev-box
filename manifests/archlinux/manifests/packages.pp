@@ -36,7 +36,7 @@ class archlinux::packages {
 
     # PDF reader.
 
-    'evince',
+    'mupdf',
 
     # Web.
 
