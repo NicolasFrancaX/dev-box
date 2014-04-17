@@ -109,9 +109,10 @@ class archlinux::packages {
 
     'vlc',
 
-    # Audio editing.
+    # Audio tools.
 
     'audacity',
+    'fmit',
 
     # Time synchronization.
 
