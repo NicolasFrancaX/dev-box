@@ -42,6 +42,7 @@ class archlinux::packages {
 
     'chromium',
     'flashplugin',
+    'icedtea-web-java7',
     'transmission-gtk',
     'skype',
 
